@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FC2A5CD2339F67600FBF7D4 /* KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A5CB2339F67600FBF7D4 /* KKUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FC2A5DA2339F77D00FBF7D4 /* UIColor+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A5D82339F77D00FBF7D4 /* UIColor+KKUtils.m */; };
+		2FC2A5DB2339F77D00FBF7D4 /* UIColor+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A5D92339F77D00FBF7D4 /* UIColor+KKUtils.h */; };
+		2FC2A5DE2339F86100FBF7D4 /* NSArray+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A5DC2339F86100FBF7D4 /* NSArray+KKUtils.h */; };
+		2FC2A5DF2339F86100FBF7D4 /* NSArray+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A5DD2339F86100FBF7D4 /* NSArray+KKUtils.m */; };
+		2FC2A5E22339FA8700FBF7D4 /* NSDictionary+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A5E02339FA8700FBF7D4 /* NSDictionary+KKUtils.h */; };
+		2FC2A5E32339FA8700FBF7D4 /* NSDictionary+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A5E12339FA8700FBF7D4 /* NSDictionary+KKUtils.m */; };
+		2FC2A5E62339FB0C00FBF7D4 /* NSNumber+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A5E42339FB0C00FBF7D4 /* NSNumber+KKUtils.h */; };
+		2FC2A5E72339FB0C00FBF7D4 /* NSNumber+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A5E52339FB0C00FBF7D4 /* NSNumber+KKUtils.m */; };
+		2FC2A5EA2339FBCF00FBF7D4 /* UICollectionView+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A5E82339FBCF00FBF7D4 /* UICollectionView+KKUtils.h */; };
+		2FC2A5EB2339FBCF00FBF7D4 /* UICollectionView+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A5E92339FBCF00FBF7D4 /* UICollectionView+KKUtils.m */; };
+		2FC2A5EE2339FCCC00FBF7D4 /* UITableView+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A5EC2339FCCC00FBF7D4 /* UITableView+KKUtils.h */; };
+		2FC2A5EF2339FCCC00FBF7D4 /* UITableView+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A5ED2339FCCC00FBF7D4 /* UITableView+KKUtils.m */; };
+		2FC2A5F22339FDAC00FBF7D4 /* UIView+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A5F02339FDAC00FBF7D4 /* UIView+KKUtils.h */; };
+		2FC2A5F32339FDAC00FBF7D4 /* UIView+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A5F12339FDAC00FBF7D4 /* UIView+KKUtils.m */; };
+		2FC2A5F62339FE4600FBF7D4 /* UIViewController+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A5F42339FE4600FBF7D4 /* UIViewController+KKUtils.h */; };
+		2FC2A5F72339FE4600FBF7D4 /* UIViewController+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A5F52339FE4600FBF7D4 /* UIViewController+KKUtils.m */; };
+		2FC2A5FA2339FEEE00FBF7D4 /* UIImage+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A5F82339FEEE00FBF7D4 /* UIImage+KKUtils.h */; };
+		2FC2A5FB2339FEEE00FBF7D4 /* UIImage+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A5F92339FEEE00FBF7D4 /* UIImage+KKUtils.m */; };
+		2FC2A5FE2339FFDB00FBF7D4 /* UIScreen+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A5FC2339FFDB00FBF7D4 /* UIScreen+KKUtils.h */; };
+		2FC2A5FF2339FFDB00FBF7D4 /* UIScreen+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A5FD2339FFDB00FBF7D4 /* UIScreen+KKUtils.m */; };
+		2FC2A602233A011C00FBF7D4 /* NSObject+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A600233A011C00FBF7D4 /* NSObject+KKUtils.h */; };
+		2FC2A603233A011C00FBF7D4 /* NSObject+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A601233A011C00FBF7D4 /* NSObject+KKUtils.m */; };
+		2FC2A607233A036500FBF7D4 /* KKIMappable.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A606233A036500FBF7D4 /* KKIMappable.h */; };
+		2FC2A60E233A044A00FBF7D4 /* NSURLConnection+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A60C233A044A00FBF7D4 /* NSURLConnection+KKUtils.m */; };
+		2FC2A60F233A044A00FBF7D4 /* NSURLConnection+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A60D233A044A00FBF7D4 /* NSURLConnection+KKUtils.h */; };
+		2FC2A612233A064200FBF7D4 /* UIImageView+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A610233A064200FBF7D4 /* UIImageView+KKUtils.h */; };
+		2FC2A613233A064200FBF7D4 /* UIImageView+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A611233A064200FBF7D4 /* UIImageView+KKUtils.m */; };
+		2FC2A616233A09B000FBF7D4 /* NSString+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A614233A09B000FBF7D4 /* NSString+KKUtils.h */; };
+		2FC2A617233A09B000FBF7D4 /* NSString+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A615233A09B000FBF7D4 /* NSString+KKUtils.m */; };
+		2FC2A61F233A0AFA00FBF7D4 /* KKPaginatedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A61D233A0AF900FBF7D4 /* KKPaginatedList.m */; };
+		2FC2A620233A0AFA00FBF7D4 /* KKPaginatedList.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A61E233A0AF900FBF7D4 /* KKPaginatedList.h */; };
+		2FC2A623233A0C9900FBF7D4 /* KKArc.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A621233A0C9900FBF7D4 /* KKArc.h */; };
+		2FC2A624233A0C9900FBF7D4 /* KKArc.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A622233A0C9900FBF7D4 /* KKArc.m */; };
+		2FC2A627233A102900FBF7D4 /* KKUIView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A625233A102900FBF7D4 /* KKUIView.h */; };
+		2FC2A628233A102900FBF7D4 /* KKUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A626233A102900FBF7D4 /* KKUIView.m */; };
+		2FC2A62C233A10AC00FBF7D4 /* KKMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A62B233A10AC00FBF7D4 /* KKMacros.h */; };
+		2FC2A62F233A113D00FBF7D4 /* KKNSLayoutConstraintExpandableByKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A62D233A113D00FBF7D4 /* KKNSLayoutConstraintExpandableByKeyboard.h */; };
+		2FC2A630233A113D00FBF7D4 /* KKNSLayoutConstraintExpandableByKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A62E233A113D00FBF7D4 /* KKNSLayoutConstraintExpandableByKeyboard.m */; };
+		2FC2A633233A124500FBF7D4 /* KKUILabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A631233A124500FBF7D4 /* KKUILabel.h */; };
+		2FC2A634233A124500FBF7D4 /* KKUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A632233A124500FBF7D4 /* KKUILabel.m */; };
+		2FC2A637233A12DC00FBF7D4 /* KKUIButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A635233A12DC00FBF7D4 /* KKUIButton.h */; };
+		2FC2A638233A12DC00FBF7D4 /* KKUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A636233A12DC00FBF7D4 /* KKUIButton.m */; };
+		2FC2A63B233A40D100FBF7D4 /* KKUITextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A639233A40D100FBF7D4 /* KKUITextField.h */; };
+		2FC2A63C233A40D100FBF7D4 /* KKUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A63A233A40D100FBF7D4 /* KKUITextField.m */; };
+		2FC2A63F233A416100FBF7D4 /* KKUIImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A63D233A416100FBF7D4 /* KKUIImageView.h */; };
+		2FC2A640233A416100FBF7D4 /* KKUIImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A63E233A416100FBF7D4 /* KKUIImageView.m */; };
+		2FC2A643233A425F00FBF7D4 /* KKUITextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A641233A425F00FBF7D4 /* KKUITextView.h */; };
+		2FC2A644233A425F00FBF7D4 /* KKUITextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A642233A425F00FBF7D4 /* KKUITextView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2FC2A5C82339F67600FBF7D4 /* KKUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KKUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FC2A5CB2339F67600FBF7D4 /* KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKUtils.h; sourceTree = "<group>"; };
+		2FC2A5CC2339F67600FBF7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FC2A5D82339F77D00FBF7D4 /* UIColor+KKUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KKUtils.m"; sourceTree = "<group>"; };
+		2FC2A5D92339F77D00FBF7D4 /* UIColor+KKUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+KKUtils.h"; sourceTree = "<group>"; };
+		2FC2A5DC2339F86100FBF7D4 /* NSArray+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+KKUtils.h"; sourceTree = "<group>"; };
+		2FC2A5DD2339F86100FBF7D4 /* NSArray+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+KKUtils.m"; sourceTree = "<group>"; };
+		2FC2A5E02339FA8700FBF7D4 /* NSDictionary+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+KKUtils.h"; sourceTree = "<group>"; };
+		2FC2A5E12339FA8700FBF7D4 /* NSDictionary+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+KKUtils.m"; sourceTree = "<group>"; };
+		2FC2A5E42339FB0C00FBF7D4 /* NSNumber+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+KKUtils.h"; sourceTree = "<group>"; };
+		2FC2A5E52339FB0C00FBF7D4 /* NSNumber+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+KKUtils.m"; sourceTree = "<group>"; };
+		2FC2A5E82339FBCF00FBF7D4 /* UICollectionView+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+KKUtils.h"; sourceTree = "<group>"; };
+		2FC2A5E92339FBCF00FBF7D4 /* UICollectionView+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+KKUtils.m"; sourceTree = "<group>"; };
+		2FC2A5EC2339FCCC00FBF7D4 /* UITableView+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+KKUtils.h"; sourceTree = "<group>"; };
+		2FC2A5ED2339FCCC00FBF7D4 /* UITableView+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+KKUtils.m"; sourceTree = "<group>"; };
+		2FC2A5F02339FDAC00FBF7D4 /* UIView+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+KKUtils.h"; sourceTree = "<group>"; };
+		2FC2A5F12339FDAC00FBF7D4 /* UIView+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+KKUtils.m"; sourceTree = "<group>"; };
+		2FC2A5F42339FE4600FBF7D4 /* UIViewController+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KKUtils.h"; sourceTree = "<group>"; };
+		2FC2A5F52339FE4600FBF7D4 /* UIViewController+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KKUtils.m"; sourceTree = "<group>"; };
+		2FC2A5F82339FEEE00FBF7D4 /* UIImage+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+KKUtils.h"; sourceTree = "<group>"; };
+		2FC2A5F92339FEEE00FBF7D4 /* UIImage+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KKUtils.m"; sourceTree = "<group>"; };
+		2FC2A5FC2339FFDB00FBF7D4 /* UIScreen+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScreen+KKUtils.h"; sourceTree = "<group>"; };
+		2FC2A5FD2339FFDB00FBF7D4 /* UIScreen+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+KKUtils.m"; sourceTree = "<group>"; };
+		2FC2A600233A011C00FBF7D4 /* NSObject+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+KKUtils.h"; sourceTree = "<group>"; };
+		2FC2A601233A011C00FBF7D4 /* NSObject+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KKUtils.m"; sourceTree = "<group>"; };
+		2FC2A606233A036500FBF7D4 /* KKIMappable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKIMappable.h; sourceTree = "<group>"; };
+		2FC2A60C233A044A00FBF7D4 /* NSURLConnection+KKUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+KKUtils.m"; sourceTree = "<group>"; };
+		2FC2A60D233A044A00FBF7D4 /* NSURLConnection+KKUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+KKUtils.h"; sourceTree = "<group>"; };
+		2FC2A610233A064200FBF7D4 /* UIImageView+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+KKUtils.h"; sourceTree = "<group>"; };
+		2FC2A611233A064200FBF7D4 /* UIImageView+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+KKUtils.m"; sourceTree = "<group>"; };
+		2FC2A614233A09B000FBF7D4 /* NSString+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+KKUtils.h"; sourceTree = "<group>"; };
+		2FC2A615233A09B000FBF7D4 /* NSString+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+KKUtils.m"; sourceTree = "<group>"; };
+		2FC2A61D233A0AF900FBF7D4 /* KKPaginatedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKPaginatedList.m; sourceTree = "<group>"; };
+		2FC2A61E233A0AF900FBF7D4 /* KKPaginatedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPaginatedList.h; sourceTree = "<group>"; };
+		2FC2A621233A0C9900FBF7D4 /* KKArc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKArc.h; sourceTree = "<group>"; };
+		2FC2A622233A0C9900FBF7D4 /* KKArc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKArc.m; sourceTree = "<group>"; };
+		2FC2A625233A102900FBF7D4 /* KKUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKUIView.h; sourceTree = "<group>"; };
+		2FC2A626233A102900FBF7D4 /* KKUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKUIView.m; sourceTree = "<group>"; };
+		2FC2A62B233A10AC00FBF7D4 /* KKMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKMacros.h; sourceTree = "<group>"; };
+		2FC2A62D233A113D00FBF7D4 /* KKNSLayoutConstraintExpandableByKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKNSLayoutConstraintExpandableByKeyboard.h; sourceTree = "<group>"; };
+		2FC2A62E233A113D00FBF7D4 /* KKNSLayoutConstraintExpandableByKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKNSLayoutConstraintExpandableByKeyboard.m; sourceTree = "<group>"; };
+		2FC2A631233A124500FBF7D4 /* KKUILabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKUILabel.h; sourceTree = "<group>"; };
+		2FC2A632233A124500FBF7D4 /* KKUILabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKUILabel.m; sourceTree = "<group>"; };
+		2FC2A635233A12DC00FBF7D4 /* KKUIButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKUIButton.h; sourceTree = "<group>"; };
+		2FC2A636233A12DC00FBF7D4 /* KKUIButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKUIButton.m; sourceTree = "<group>"; };
+		2FC2A639233A40D100FBF7D4 /* KKUITextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKUITextField.h; sourceTree = "<group>"; };
+		2FC2A63A233A40D100FBF7D4 /* KKUITextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKUITextField.m; sourceTree = "<group>"; };
+		2FC2A63D233A416100FBF7D4 /* KKUIImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKUIImageView.h; sourceTree = "<group>"; };
+		2FC2A63E233A416100FBF7D4 /* KKUIImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKUIImageView.m; sourceTree = "<group>"; };
+		2FC2A641233A425F00FBF7D4 /* KKUITextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKUITextView.h; sourceTree = "<group>"; };
+		2FC2A642233A425F00FBF7D4 /* KKUITextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKUITextView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FC2A5C52339F67600FBF7D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FC2A5BE2339F67600FBF7D4 = {
+			isa = PBXGroup;
+			children = (
+				2FC2A5CA2339F67600FBF7D4 /* KKUtils */,
+				2FC2A5C92339F67600FBF7D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2FC2A5C92339F67600FBF7D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FC2A5C82339F67600FBF7D4 /* KKUtils.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FC2A5CA2339F67600FBF7D4 /* KKUtils */ = {
+			isa = PBXGroup;
+			children = (
+				2FC2A5CB2339F67600FBF7D4 /* KKUtils.h */,
+				2FC2A62A233A10AC00FBF7D4 /* Macros */,
+				2FC2A605233A036500FBF7D4 /* Protocols */,
+				2FC2A61C233A0AF900FBF7D4 /* Classes */,
+				2FC2A5D72339F77D00FBF7D4 /* Categories */,
+				2FC2A5CC2339F67600FBF7D4 /* Info.plist */,
+			);
+			path = KKUtils;
+			sourceTree = "<group>";
+		};
+		2FC2A5D72339F77D00FBF7D4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2FC2A5D92339F77D00FBF7D4 /* UIColor+KKUtils.h */,
+				2FC2A5D82339F77D00FBF7D4 /* UIColor+KKUtils.m */,
+				2FC2A5F82339FEEE00FBF7D4 /* UIImage+KKUtils.h */,
+				2FC2A5F92339FEEE00FBF7D4 /* UIImage+KKUtils.m */,
+				2FC2A5DC2339F86100FBF7D4 /* NSArray+KKUtils.h */,
+				2FC2A5DD2339F86100FBF7D4 /* NSArray+KKUtils.m */,
+				2FC2A5E02339FA8700FBF7D4 /* NSDictionary+KKUtils.h */,
+				2FC2A5E12339FA8700FBF7D4 /* NSDictionary+KKUtils.m */,
+				2FC2A5E42339FB0C00FBF7D4 /* NSNumber+KKUtils.h */,
+				2FC2A5E52339FB0C00FBF7D4 /* NSNumber+KKUtils.m */,
+				2FC2A614233A09B000FBF7D4 /* NSString+KKUtils.h */,
+				2FC2A615233A09B000FBF7D4 /* NSString+KKUtils.m */,
+				2FC2A5E82339FBCF00FBF7D4 /* UICollectionView+KKUtils.h */,
+				2FC2A5E92339FBCF00FBF7D4 /* UICollectionView+KKUtils.m */,
+				2FC2A5EC2339FCCC00FBF7D4 /* UITableView+KKUtils.h */,
+				2FC2A5ED2339FCCC00FBF7D4 /* UITableView+KKUtils.m */,
+				2FC2A5F02339FDAC00FBF7D4 /* UIView+KKUtils.h */,
+				2FC2A5F12339FDAC00FBF7D4 /* UIView+KKUtils.m */,
+				2FC2A610233A064200FBF7D4 /* UIImageView+KKUtils.h */,
+				2FC2A611233A064200FBF7D4 /* UIImageView+KKUtils.m */,
+				2FC2A5F42339FE4600FBF7D4 /* UIViewController+KKUtils.h */,
+				2FC2A5F52339FE4600FBF7D4 /* UIViewController+KKUtils.m */,
+				2FC2A5FC2339FFDB00FBF7D4 /* UIScreen+KKUtils.h */,
+				2FC2A5FD2339FFDB00FBF7D4 /* UIScreen+KKUtils.m */,
+				2FC2A600233A011C00FBF7D4 /* NSObject+KKUtils.h */,
+				2FC2A601233A011C00FBF7D4 /* NSObject+KKUtils.m */,
+				2FC2A60D233A044A00FBF7D4 /* NSURLConnection+KKUtils.h */,
+				2FC2A60C233A044A00FBF7D4 /* NSURLConnection+KKUtils.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		2FC2A605233A036500FBF7D4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2FC2A606233A036500FBF7D4 /* KKIMappable.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2FC2A61C233A0AF900FBF7D4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2FC2A61E233A0AF900FBF7D4 /* KKPaginatedList.h */,
+				2FC2A61D233A0AF900FBF7D4 /* KKPaginatedList.m */,
+				2FC2A621233A0C9900FBF7D4 /* KKArc.h */,
+				2FC2A622233A0C9900FBF7D4 /* KKArc.m */,
+				2FC2A625233A102900FBF7D4 /* KKUIView.h */,
+				2FC2A626233A102900FBF7D4 /* KKUIView.m */,
+				2FC2A63D233A416100FBF7D4 /* KKUIImageView.h */,
+				2FC2A63E233A416100FBF7D4 /* KKUIImageView.m */,
+				2FC2A631233A124500FBF7D4 /* KKUILabel.h */,
+				2FC2A632233A124500FBF7D4 /* KKUILabel.m */,
+				2FC2A635233A12DC00FBF7D4 /* KKUIButton.h */,
+				2FC2A636233A12DC00FBF7D4 /* KKUIButton.m */,
+				2FC2A639233A40D100FBF7D4 /* KKUITextField.h */,
+				2FC2A63A233A40D100FBF7D4 /* KKUITextField.m */,
+				2FC2A641233A425F00FBF7D4 /* KKUITextView.h */,
+				2FC2A642233A425F00FBF7D4 /* KKUITextView.m */,
+				2FC2A62D233A113D00FBF7D4 /* KKNSLayoutConstraintExpandableByKeyboard.h */,
+				2FC2A62E233A113D00FBF7D4 /* KKNSLayoutConstraintExpandableByKeyboard.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2FC2A62A233A10AC00FBF7D4 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				2FC2A62B233A10AC00FBF7D4 /* KKMacros.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2FC2A5C32339F67600FBF7D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FC2A627233A102900FBF7D4 /* KKUIView.h in Headers */,
+				2FC2A633233A124500FBF7D4 /* KKUILabel.h in Headers */,
+				2FC2A63B233A40D100FBF7D4 /* KKUITextField.h in Headers */,
+				2FC2A5F62339FE4600FBF7D4 /* UIViewController+KKUtils.h in Headers */,
+				2FC2A5EE2339FCCC00FBF7D4 /* UITableView+KKUtils.h in Headers */,
+				2FC2A616233A09B000FBF7D4 /* NSString+KKUtils.h in Headers */,
+				2FC2A602233A011C00FBF7D4 /* NSObject+KKUtils.h in Headers */,
+				2FC2A5FE2339FFDB00FBF7D4 /* UIScreen+KKUtils.h in Headers */,
+				2FC2A607233A036500FBF7D4 /* KKIMappable.h in Headers */,
+				2FC2A62C233A10AC00FBF7D4 /* KKMacros.h in Headers */,
+				2FC2A5FA2339FEEE00FBF7D4 /* UIImage+KKUtils.h in Headers */,
+				2FC2A5F22339FDAC00FBF7D4 /* UIView+KKUtils.h in Headers */,
+				2FC2A612233A064200FBF7D4 /* UIImageView+KKUtils.h in Headers */,
+				2FC2A623233A0C9900FBF7D4 /* KKArc.h in Headers */,
+				2FC2A620233A0AFA00FBF7D4 /* KKPaginatedList.h in Headers */,
+				2FC2A5DB2339F77D00FBF7D4 /* UIColor+KKUtils.h in Headers */,
+				2FC2A643233A425F00FBF7D4 /* KKUITextView.h in Headers */,
+				2FC2A63F233A416100FBF7D4 /* KKUIImageView.h in Headers */,
+				2FC2A5E62339FB0C00FBF7D4 /* NSNumber+KKUtils.h in Headers */,
+				2FC2A637233A12DC00FBF7D4 /* KKUIButton.h in Headers */,
+				2FC2A5E22339FA8700FBF7D4 /* NSDictionary+KKUtils.h in Headers */,
+				2FC2A62F233A113D00FBF7D4 /* KKNSLayoutConstraintExpandableByKeyboard.h in Headers */,
+				2FC2A5DE2339F86100FBF7D4 /* NSArray+KKUtils.h in Headers */,
+				2FC2A60F233A044A00FBF7D4 /* NSURLConnection+KKUtils.h in Headers */,
+				2FC2A5CD2339F67600FBF7D4 /* KKUtils.h in Headers */,
+				2FC2A5EA2339FBCF00FBF7D4 /* UICollectionView+KKUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2FC2A5C72339F67600FBF7D4 /* KKUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FC2A5D02339F67600FBF7D4 /* Build configuration list for PBXNativeTarget "KKUtils" */;
+			buildPhases = (
+				2FC2A5C32339F67600FBF7D4 /* Headers */,
+				2FC2A5C42339F67600FBF7D4 /* Sources */,
+				2FC2A5C52339F67600FBF7D4 /* Frameworks */,
+				2FC2A5C62339F67600FBF7D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KKUtils;
+			productName = KKUtils;
+			productReference = 2FC2A5C82339F67600FBF7D4 /* KKUtils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FC2A5BF2339F67600FBF7D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Tolga Seremet";
+				TargetAttributes = {
+					2FC2A5C72339F67600FBF7D4 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 2FC2A5C22339F67600FBF7D4 /* Build configuration list for PBXProject "KKUtils" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FC2A5BE2339F67600FBF7D4;
+			productRefGroup = 2FC2A5C92339F67600FBF7D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FC2A5C72339F67600FBF7D4 /* KKUtils */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FC2A5C62339F67600FBF7D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FC2A5C42339F67600FBF7D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FC2A640233A416100FBF7D4 /* KKUIImageView.m in Sources */,
+				2FC2A613233A064200FBF7D4 /* UIImageView+KKUtils.m in Sources */,
+				2FC2A5DF2339F86100FBF7D4 /* NSArray+KKUtils.m in Sources */,
+				2FC2A5EF2339FCCC00FBF7D4 /* UITableView+KKUtils.m in Sources */,
+				2FC2A5E72339FB0C00FBF7D4 /* NSNumber+KKUtils.m in Sources */,
+				2FC2A603233A011C00FBF7D4 /* NSObject+KKUtils.m in Sources */,
+				2FC2A63C233A40D100FBF7D4 /* KKUITextField.m in Sources */,
+				2FC2A617233A09B000FBF7D4 /* NSString+KKUtils.m in Sources */,
+				2FC2A644233A425F00FBF7D4 /* KKUITextView.m in Sources */,
+				2FC2A5EB2339FBCF00FBF7D4 /* UICollectionView+KKUtils.m in Sources */,
+				2FC2A638233A12DC00FBF7D4 /* KKUIButton.m in Sources */,
+				2FC2A61F233A0AFA00FBF7D4 /* KKPaginatedList.m in Sources */,
+				2FC2A634233A124500FBF7D4 /* KKUILabel.m in Sources */,
+				2FC2A5F72339FE4600FBF7D4 /* UIViewController+KKUtils.m in Sources */,
+				2FC2A5E32339FA8700FBF7D4 /* NSDictionary+KKUtils.m in Sources */,
+				2FC2A5DA2339F77D00FBF7D4 /* UIColor+KKUtils.m in Sources */,
+				2FC2A628233A102900FBF7D4 /* KKUIView.m in Sources */,
+				2FC2A5FF2339FFDB00FBF7D4 /* UIScreen+KKUtils.m in Sources */,
+				2FC2A5F32339FDAC00FBF7D4 /* UIView+KKUtils.m in Sources */,
+				2FC2A60E233A044A00FBF7D4 /* NSURLConnection+KKUtils.m in Sources */,
+				2FC2A624233A0C9900FBF7D4 /* KKArc.m in Sources */,
+				2FC2A5FB2339FEEE00FBF7D4 /* UIImage+KKUtils.m in Sources */,
+				2FC2A630233A113D00FBF7D4 /* KKNSLayoutConstraintExpandableByKeyboard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2FC2A5CE2339F67600FBF7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2FC2A5CF2339F67600FBF7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2FC2A5D12339F67600FBF7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6AUH76QNW9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KKUtils/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kokteyl.KKUtils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2FC2A5D22339F67600FBF7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6AUH76QNW9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KKUtils/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kokteyl.KKUtils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FC2A5C22339F67600FBF7D4 /* Build configuration list for PBXProject "KKUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FC2A5CE2339F67600FBF7D4 /* Debug */,
+				2FC2A5CF2339F67600FBF7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FC2A5D02339F67600FBF7D4 /* Build configuration list for PBXNativeTarget "KKUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FC2A5D12339F67600FBF7D4 /* Debug */,
+				2FC2A5D22339F67600FBF7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FC2A5BF2339F67600FBF7D4 /* Project object */;
+}
