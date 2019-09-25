@@ -58,6 +58,8 @@
 		2FC2A644233A425F00FBF7D4 /* KKUITextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A642233A425F00FBF7D4 /* KKUITextView.m */; };
 		2FC2A647233A628800FBF7D4 /* UIStoryboard+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A645233A628800FBF7D4 /* UIStoryboard+KKUtils.h */; };
 		2FC2A648233A628800FBF7D4 /* UIStoryboard+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A646233A628800FBF7D4 /* UIStoryboard+KKUtils.m */; };
+		2FC2A64B233B92A700FBF7D4 /* NSDate+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A649233B92A700FBF7D4 /* NSDate+KKUtils.h */; };
+		2FC2A64C233B92A700FBF7D4 /* NSDate+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A64A233B92A700FBF7D4 /* NSDate+KKUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +116,8 @@
 		2FC2A642233A425F00FBF7D4 /* KKUITextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKUITextView.m; sourceTree = "<group>"; };
 		2FC2A645233A628800FBF7D4 /* UIStoryboard+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+KKUtils.h"; sourceTree = "<group>"; };
 		2FC2A646233A628800FBF7D4 /* UIStoryboard+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+KKUtils.m"; sourceTree = "<group>"; };
+		2FC2A649233B92A700FBF7D4 /* NSDate+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+KKUtils.h"; sourceTree = "<group>"; };
+		2FC2A64A233B92A700FBF7D4 /* NSDate+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+KKUtils.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +193,8 @@
 				2FC2A601233A011C00FBF7D4 /* NSObject+KKUtils.m */,
 				2FC2A60D233A044A00FBF7D4 /* NSURLConnection+KKUtils.h */,
 				2FC2A60C233A044A00FBF7D4 /* NSURLConnection+KKUtils.m */,
+				2FC2A649233B92A700FBF7D4 /* NSDate+KKUtils.h */,
+				2FC2A64A233B92A700FBF7D4 /* NSDate+KKUtils.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -260,6 +266,7 @@
 				2FC2A643233A425F00FBF7D4 /* KKUITextView.h in Headers */,
 				2FC2A63F233A416100FBF7D4 /* KKUIImageView.h in Headers */,
 				2FC2A5E62339FB0C00FBF7D4 /* NSNumber+KKUtils.h in Headers */,
+				2FC2A64B233B92A700FBF7D4 /* NSDate+KKUtils.h in Headers */,
 				2FC2A637233A12DC00FBF7D4 /* KKUIButton.h in Headers */,
 				2FC2A5E22339FA8700FBF7D4 /* NSDictionary+KKUtils.h in Headers */,
 				2FC2A62F233A113D00FBF7D4 /* KKNSLayoutConstraintExpandableByKeyboard.h in Headers */,
@@ -359,6 +366,7 @@
 				2FC2A628233A102900FBF7D4 /* KKUIView.m in Sources */,
 				2FC2A5FF2339FFDB00FBF7D4 /* UIScreen+KKUtils.m in Sources */,
 				2FC2A5F32339FDAC00FBF7D4 /* UIView+KKUtils.m in Sources */,
+				2FC2A64C233B92A700FBF7D4 /* NSDate+KKUtils.m in Sources */,
 				2FC2A60E233A044A00FBF7D4 /* NSURLConnection+KKUtils.m in Sources */,
 				2FC2A624233A0C9900FBF7D4 /* KKArc.m in Sources */,
 				2FC2A5FB2339FEEE00FBF7D4 /* UIImage+KKUtils.m in Sources */,

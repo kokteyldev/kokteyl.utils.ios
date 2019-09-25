@@ -48,5 +48,6 @@ FOUNDATION_EXPORT const unsigned char KKUtilsVersionString[];
 #import "NSObject+KKUtils.h"
 #import "NSURLConnection+KKUtils.h"
 #import "NSString+KKUtils.h"
+#import "NSDate+KKUtils.h"
 
 
