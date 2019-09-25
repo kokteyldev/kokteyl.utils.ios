@@ -153,7 +153,7 @@ CGFloat const kKKArcStrokeWidth = 3;
                                                                 self.frame.size.height/2.0 - labelWidth/2,
                                                                 labelWidth,
                                                                 labelWidth)];
-    _countDownLabel.text = [NSString stringWithFormat:@"%ldsn", _countDownValue];
+    _countDownLabel.text = [NSString stringWithFormat:@"%ldsn", (long)_countDownValue];
     _countDownLabel.font = [UIFont fontWithName:@"OpenSans-Regular" size:14];
     _countDownLabel.textAlignment = NSTextAlignmentCenter;
     _countDownLabel.textColor = _color;
@@ -217,12 +217,12 @@ CGFloat const kKKArcStrokeWidth = 3;
     if (_countDownValue == 0) {
         _countDownLabel.text = @"";
     } else {
-        if (![_countDownLabel.text isEqualToString:[NSString stringWithFormat:@"%ldsn", _countDownValue]]) {
+        if (![_countDownLabel.text isEqualToString:[NSString stringWithFormat:@"%ldsn", (long)_countDownValue]]) {
             [UIView transitionWithView:_countDownLabel
                               duration:.4f
                                options:UIViewAnimationOptionTransitionCrossDissolve
                             animations:^{
-                self->_countDownLabel.text = [NSString stringWithFormat:@"%ldsn", self->_countDownValue];
+                self->_countDownLabel.text = [NSString stringWithFormat:@"%ldsn", (long)self->_countDownValue];
             } completion:nil];
         }
     }
