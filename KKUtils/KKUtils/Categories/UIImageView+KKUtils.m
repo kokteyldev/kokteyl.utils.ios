@@ -27,7 +27,9 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             self.image = image;
         });
-    } failure:nil];
+    } failure:^(NSError *error) {
+        NSLog(@"<KKUtils ERROR> %@", error.localizedDescription);
+    }];
 }
 
 - (void)setURL:(NSURL *)uRL {
