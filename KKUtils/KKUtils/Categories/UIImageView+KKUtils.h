@@ -10,8 +10,8 @@
 
 @interface UIImageView (KKUtils)
 
-@property (nonatomic, strong) NSString *uRL;
-@property (nonatomic, strong) NSString *imageName;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *uRLString;
+@property (nonatomic, strong) NSURL *uRL;
 
 @end
-

@@ -11,22 +11,27 @@
 
 @implementation UIImageView (KKUtils)
 
-@dynamic uRL, imageName;
+@dynamic name, uRLString, uRL;
 
-- (void)setURL:(NSString *)uRL {
+- (void)setName:(NSString *)name {
+    self.image = [UIImage imageNamed:name];
+}
 
-    uRL =  [uRL stringByAddingPercentEncodingWithAllowedCharacters:
-            [NSCharacterSet URLQueryAllowedCharacterSet]];
+- (void)setURLString:(NSString *)uRLString {
 
-    [NSURLConnection getImageAtURL:uRL success:^(UIImage *image) {
+    uRLString = [uRLString stringByAddingPercentEncodingWithAllowedCharacters:
+                 [NSCharacterSet URLQueryAllowedCharacterSet]
+                 ];
+
+    [NSURLConnection getImageAtURL:uRLString success:^(UIImage *image) {
         dispatch_async(dispatch_get_main_queue(), ^{
             self.image = image;
         });
     } failure:nil];
 }
 
-- (void)setImageName:(NSString *)imageName {
-    self.image = [UIImage imageNamed:imageName];
+- (void)setURL:(NSURL *)uRL {
+    [self setURLString:uRL.absoluteString];
 }
 
 @end
