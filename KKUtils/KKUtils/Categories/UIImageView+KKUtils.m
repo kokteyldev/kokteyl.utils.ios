@@ -7,7 +7,8 @@
 //
 
 #import "UIImageView+KKUtils.h"
-#import "NSURLConnection+KKUtils.h"
+#import "UIImageView+AFNetworking.h"
+
 
 @implementation UIImageView (KKUtils)
 
@@ -23,17 +24,13 @@
                  [NSCharacterSet URLQueryAllowedCharacterSet]
                  ];
 
-    [NSURLConnection getImageAtURL:uRLString success:^(UIImage *image) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            self.image = image;
-        });
-    } failure:^(NSError *error) {
-        NSLog(@"<KKUtils ERROR> %@", error.localizedDescription);
-    }];
+    if (uRLString != nil) {
+        [self setImageWithURL:[NSURL URLWithString:uRLString]];
+    }
 }
 
 - (void)setURL:(NSURL *)uRL {
-    [self setURLString:uRL.absoluteString];
+    [self setImageWithURL:uRL];
 }
 
 @end

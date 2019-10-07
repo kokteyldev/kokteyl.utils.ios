@@ -62,6 +62,16 @@
 + (void)addLayoutConstraintsForContainerView:(UIView*)containerView
                                   andSubview:(UIView*)subview
                                  withPadding:(float)padding{
+    [UIView addLayoutConstraintsForContainerView:containerView
+                                      andSubview:subview
+                                     withPadding:padding
+                              relativeToSafeArea:NO];
+}
+
++ (void)addLayoutConstraintsForContainerView:(UIView*)containerView
+                                  andSubview:(UIView*)subview
+                                 withPadding:(float)padding
+                          relativeToSafeArea:(BOOL)relativeToSafeArea {
 
     subview.translatesAutoresizingMaskIntoConstraints = NO;
 
@@ -73,9 +83,20 @@
 
     float paddingsArray[4] = {-padding,padding,padding,-padding};
 
+    BOOL isRelativeToSafeArea = NO;
+
+    NSObject *relatedView = containerView;
+
+    if (@available(iOS 11, *)){
+        if (relativeToSafeArea) {
+            isRelativeToSafeArea = YES;
+            relatedView = containerView.safeAreaLayoutGuide;
+        }
+    }
+
     for (int i = 0; i < 4; i++) {
         [containerView addConstraint:
-         [NSLayoutConstraint constraintWithItem:containerView
+         [NSLayoutConstraint constraintWithItem:isRelativeToSafeArea ? relatedView : containerView
                                       attribute:constraintsArray[i]
                                       relatedBy:NSLayoutRelationEqual
                                          toItem:subview
@@ -86,9 +107,9 @@
     }
 }
 
-+ (void)addLayoutConstraintsForContainerView:(UIView*)containerView
-                                  andSubview:(UIView*)subview
-                        withEdgeInsetsString:(NSString*)edgeInsetsString{
++ (void)addLayoutConstraintsForContainerView:(UIView *)containerView
+                                  andSubview:(UIView *)subview
+                        withEdgeInsetsString:(NSString *)edgeInsetsString{
 
     subview.translatesAutoresizingMaskIntoConstraints = NO;
 
@@ -222,6 +243,44 @@
     } completion:^(BOOL finished) {
         [self removeFromSuperview];
     }];
+}
+
+- (UIViewController *)parentViewController {
+    UIResponder *responder = self;
+    while ([responder isKindOfClass:[UIView class]])
+        responder = [responder nextResponder];
+    return (UIViewController *)responder;
+}
+
++ (void)pinSubview:(UIView *)subview toTopLefInContainerView:(UIView *)containerView {
+
+    subview.translatesAutoresizingMaskIntoConstraints = NO;
+
+    NSObject *relatedView = containerView;
+
+    if (@available(iOS 11, *)){
+        relatedView = containerView.safeAreaLayoutGuide;
+    }
+
+    [containerView addConstraint:
+     [NSLayoutConstraint constraintWithItem:relatedView
+                                  attribute:NSLayoutAttributeTop
+                                  relatedBy:NSLayoutRelationEqual
+                                     toItem:subview
+                                  attribute:NSLayoutAttributeTop
+                                 multiplier:1.0
+                                   constant:0]
+     ];
+
+    [containerView addConstraint:
+     [NSLayoutConstraint constraintWithItem:relatedView
+                                  attribute:NSLayoutAttributeLeft
+                                  relatedBy:NSLayoutRelationEqual
+                                     toItem:subview
+                                  attribute:NSLayoutAttributeLeft
+                                 multiplier:1.0
+                                   constant:0]
+     ];
 }
 
 @end

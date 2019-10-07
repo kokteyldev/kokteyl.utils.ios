@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-IB_DESIGNABLE
 @interface KKUIImageView : UIImageView
 /**
  @brief Set view corner radius.

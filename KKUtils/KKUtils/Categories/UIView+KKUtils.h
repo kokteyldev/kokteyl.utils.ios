@@ -24,6 +24,10 @@
 + (void)addLayoutConstraintsForContainerView:(UIView *)containerView
                                   andSubview:(UIView *)subview
                                  withPadding:(float)padding;
++ (void)addLayoutConstraintsForContainerView:(UIView*)containerView
+                                  andSubview:(UIView*)subview
+                                 withPadding:(float)padding
+                          relativeToSafeArea:(BOOL)relativeToSafeArea;
 + (void)addLayoutConstraintsForContainerView:(UIView *)containerView
                                   andSubview:(UIView *)subview
                         withEdgeInsetsString:(NSString*)edgeInsetsString;
@@ -37,6 +41,8 @@
 + (UIView *)DarkOverlay;
 - (void)showAnimated;
 - (void)closeAnimated;
+- (UIViewController *)parentViewController;
++ (void)pinSubview:(UIView *)subview toTopLefInContainerView:(UIView *)containerView;
 
 @end
 

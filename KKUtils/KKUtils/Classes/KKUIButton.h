@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-IB_DESIGNABLE
 @interface KKUIButton : UIButton
 /**
  @brief Set view corner radius.

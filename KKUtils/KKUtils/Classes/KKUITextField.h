@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-IB_DESIGNABLE
 @interface KKUITextField : UITextField
 /**
  @brief Set localized placeholder key of textField.

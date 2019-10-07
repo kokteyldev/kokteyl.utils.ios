@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-IB_DESIGNABLE
 @interface KKUILabel : UILabel
 /**
  @brief Setup label padding in following string format "{top, left, bottom, right}" @"{0.0,0.0,0.0,0.0}".
