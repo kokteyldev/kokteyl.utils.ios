@@ -6,6 +6,9 @@
 build/
 DerivedData/
 
+## Ektras
+KKUtils/Extras/
+
 ## Various settings
 *.pbxuser
 !default.pbxuser
