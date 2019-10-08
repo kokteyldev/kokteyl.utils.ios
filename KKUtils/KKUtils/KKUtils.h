@@ -34,6 +34,7 @@ FOUNDATION_EXPORT const unsigned char KKUtilsVersionString[];
 #import "KKUIView.h"
 
 // Categories
+#import "AFHTTPSessionManager.h"
 #import "AFHTTPSessionManager+KKUtils.h"
 #import "NSArray+KKUtils.h"
 #import "NSDate+KKUtils.h"
