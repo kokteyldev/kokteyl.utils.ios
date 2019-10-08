@@ -8,6 +8,7 @@
 
 #import "NSObject+KKUtils.h"
 #import "KKIMappable.h"
+#import "AFHTTPSessionManager.h"
 
 @implementation NSObject (KKUtils)
 
@@ -17,6 +18,18 @@
         NSDictionary* mapping = [(id<KKIMappable>)self dataKeyPathsByOutletKeyPath];
         for (NSString* key in mapping) {
             [self setValue:[object valueForKeyPath:mapping[key]] forKeyPath:key];
+        }
+    }
+}
+
+- (void)addHeaders:(NSDictionary *)headers {
+    if ([self isKindOfClass:[AFHTTPSessionManager class]]) {
+        if (headers && [headers allKeys].count > 0) {
+            AFHTTPRequestSerializer *requestSerializer = [AFHTTPRequestSerializer serializer];
+            for (NSString *key in [headers allKeys]) {
+                [requestSerializer setValue:[headers objectForKey:key] forHTTPHeaderField:key];
+            }
+            ((AFHTTPSessionManager *) self).requestSerializer = requestSerializer;
         }
     }
 }

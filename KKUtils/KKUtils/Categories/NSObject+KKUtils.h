@@ -11,6 +11,6 @@
 @interface NSObject (KKUtils)
 
 - (void)bindValuesOfObject:(NSObject *)object;
-
+- (void)addHeaders:(NSDictionary *)headers;
 @end
 
