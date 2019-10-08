@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F134E83234C8F7700259562 /* AFHTTPSessionManager+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F134E81234C8F7700259562 /* AFHTTPSessionManager+KKUtils.h */; };
+		2F134E84234C8F7700259562 /* AFHTTPSessionManager+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F134E82234C8F7700259562 /* AFHTTPSessionManager+KKUtils.m */; };
 		2FC2A5CD2339F67600FBF7D4 /* KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A5CB2339F67600FBF7D4 /* KKUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FC2A5DA2339F77D00FBF7D4 /* UIColor+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A5D82339F77D00FBF7D4 /* UIColor+KKUtils.m */; };
 		2FC2A5DB2339F77D00FBF7D4 /* UIColor+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A5D92339F77D00FBF7D4 /* UIColor+KKUtils.h */; };
@@ -99,6 +101,8 @@
 		2F134E5A234B33CF00259562 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
 		2F134E5B234B33CF00259562 /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFCompatibilityMacros.h; sourceTree = "<group>"; };
 		2F134E5C234B33CF00259562 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		2F134E81234C8F7700259562 /* AFHTTPSessionManager+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+KKUtils.h"; sourceTree = "<group>"; };
+		2F134E82234C8F7700259562 /* AFHTTPSessionManager+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+KKUtils.m"; sourceTree = "<group>"; };
 		2FC2A5C82339F67600FBF7D4 /* KKUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KKUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC2A5CB2339F67600FBF7D4 /* KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKUtils.h; sourceTree = "<group>"; };
 		2FC2A5CC2339F67600FBF7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -267,38 +271,40 @@
 		2FC2A5D72339F77D00FBF7D4 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				2FC2A5D92339F77D00FBF7D4 /* UIColor+KKUtils.h */,
-				2FC2A5D82339F77D00FBF7D4 /* UIColor+KKUtils.m */,
-				2FC2A5F82339FEEE00FBF7D4 /* UIImage+KKUtils.h */,
-				2FC2A5F92339FEEE00FBF7D4 /* UIImage+KKUtils.m */,
+				2F134E81234C8F7700259562 /* AFHTTPSessionManager+KKUtils.h */,
+				2F134E82234C8F7700259562 /* AFHTTPSessionManager+KKUtils.m */,
 				2FC2A5DC2339F86100FBF7D4 /* NSArray+KKUtils.h */,
 				2FC2A5DD2339F86100FBF7D4 /* NSArray+KKUtils.m */,
+				2FC2A649233B92A700FBF7D4 /* NSDate+KKUtils.h */,
+				2FC2A64A233B92A700FBF7D4 /* NSDate+KKUtils.m */,
 				2FC2A5E02339FA8700FBF7D4 /* NSDictionary+KKUtils.h */,
 				2FC2A5E12339FA8700FBF7D4 /* NSDictionary+KKUtils.m */,
 				2FC2A5E42339FB0C00FBF7D4 /* NSNumber+KKUtils.h */,
 				2FC2A5E52339FB0C00FBF7D4 /* NSNumber+KKUtils.m */,
+				2FC2A600233A011C00FBF7D4 /* NSObject+KKUtils.h */,
+				2FC2A601233A011C00FBF7D4 /* NSObject+KKUtils.m */,
 				2FC2A614233A09B000FBF7D4 /* NSString+KKUtils.h */,
 				2FC2A615233A09B000FBF7D4 /* NSString+KKUtils.m */,
+				2FC2A60D233A044A00FBF7D4 /* NSURLConnection+KKUtils.h */,
+				2FC2A60C233A044A00FBF7D4 /* NSURLConnection+KKUtils.m */,
 				2FC2A5E82339FBCF00FBF7D4 /* UICollectionView+KKUtils.h */,
 				2FC2A5E92339FBCF00FBF7D4 /* UICollectionView+KKUtils.m */,
+				2FC2A5D92339F77D00FBF7D4 /* UIColor+KKUtils.h */,
+				2FC2A5D82339F77D00FBF7D4 /* UIColor+KKUtils.m */,
+				2FC2A5F82339FEEE00FBF7D4 /* UIImage+KKUtils.h */,
+				2FC2A5F92339FEEE00FBF7D4 /* UIImage+KKUtils.m */,
+				2FC2A610233A064200FBF7D4 /* UIImageView+KKUtils.h */,
+				2FC2A611233A064200FBF7D4 /* UIImageView+KKUtils.m */,
+				2FC2A5FC2339FFDB00FBF7D4 /* UIScreen+KKUtils.h */,
+				2FC2A5FD2339FFDB00FBF7D4 /* UIScreen+KKUtils.m */,
+				2FC2A645233A628800FBF7D4 /* UIStoryboard+KKUtils.h */,
+				2FC2A646233A628800FBF7D4 /* UIStoryboard+KKUtils.m */,
 				2FC2A5EC2339FCCC00FBF7D4 /* UITableView+KKUtils.h */,
 				2FC2A5ED2339FCCC00FBF7D4 /* UITableView+KKUtils.m */,
 				2FC2A5F02339FDAC00FBF7D4 /* UIView+KKUtils.h */,
 				2FC2A5F12339FDAC00FBF7D4 /* UIView+KKUtils.m */,
-				2FC2A610233A064200FBF7D4 /* UIImageView+KKUtils.h */,
-				2FC2A611233A064200FBF7D4 /* UIImageView+KKUtils.m */,
 				2FC2A5F42339FE4600FBF7D4 /* UIViewController+KKUtils.h */,
 				2FC2A5F52339FE4600FBF7D4 /* UIViewController+KKUtils.m */,
-				2FC2A645233A628800FBF7D4 /* UIStoryboard+KKUtils.h */,
-				2FC2A646233A628800FBF7D4 /* UIStoryboard+KKUtils.m */,
-				2FC2A5FC2339FFDB00FBF7D4 /* UIScreen+KKUtils.h */,
-				2FC2A5FD2339FFDB00FBF7D4 /* UIScreen+KKUtils.m */,
-				2FC2A600233A011C00FBF7D4 /* NSObject+KKUtils.h */,
-				2FC2A601233A011C00FBF7D4 /* NSObject+KKUtils.m */,
-				2FC2A60D233A044A00FBF7D4 /* NSURLConnection+KKUtils.h */,
-				2FC2A60C233A044A00FBF7D4 /* NSURLConnection+KKUtils.m */,
-				2FC2A649233B92A700FBF7D4 /* NSDate+KKUtils.h */,
-				2FC2A64A233B92A700FBF7D4 /* NSDate+KKUtils.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -314,24 +320,24 @@
 		2FC2A61C233A0AF900FBF7D4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2FC2A61E233A0AF900FBF7D4 /* KKPaginatedList.h */,
-				2FC2A61D233A0AF900FBF7D4 /* KKPaginatedList.m */,
 				2FC2A621233A0C9900FBF7D4 /* KKArc.h */,
 				2FC2A622233A0C9900FBF7D4 /* KKArc.m */,
-				2FC2A625233A102900FBF7D4 /* KKUIView.h */,
-				2FC2A626233A102900FBF7D4 /* KKUIView.m */,
+				2FC2A62D233A113D00FBF7D4 /* KKNSLayoutConstraintExpandableByKeyboard.h */,
+				2FC2A62E233A113D00FBF7D4 /* KKNSLayoutConstraintExpandableByKeyboard.m */,
+				2FC2A61E233A0AF900FBF7D4 /* KKPaginatedList.h */,
+				2FC2A61D233A0AF900FBF7D4 /* KKPaginatedList.m */,
+				2FC2A635233A12DC00FBF7D4 /* KKUIButton.h */,
+				2FC2A636233A12DC00FBF7D4 /* KKUIButton.m */,
 				2FC2A63D233A416100FBF7D4 /* KKUIImageView.h */,
 				2FC2A63E233A416100FBF7D4 /* KKUIImageView.m */,
 				2FC2A631233A124500FBF7D4 /* KKUILabel.h */,
 				2FC2A632233A124500FBF7D4 /* KKUILabel.m */,
-				2FC2A635233A12DC00FBF7D4 /* KKUIButton.h */,
-				2FC2A636233A12DC00FBF7D4 /* KKUIButton.m */,
 				2FC2A639233A40D100FBF7D4 /* KKUITextField.h */,
 				2FC2A63A233A40D100FBF7D4 /* KKUITextField.m */,
 				2FC2A641233A425F00FBF7D4 /* KKUITextView.h */,
 				2FC2A642233A425F00FBF7D4 /* KKUITextView.m */,
-				2FC2A62D233A113D00FBF7D4 /* KKNSLayoutConstraintExpandableByKeyboard.h */,
-				2FC2A62E233A113D00FBF7D4 /* KKNSLayoutConstraintExpandableByKeyboard.m */,
+				2FC2A625233A102900FBF7D4 /* KKUIView.h */,
+				2FC2A626233A102900FBF7D4 /* KKUIView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -352,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FC2A627233A102900FBF7D4 /* KKUIView.h in Headers */,
+				2F134E83234C8F7700259562 /* AFHTTPSessionManager+KKUtils.h in Headers */,
 				2FC2A633233A124500FBF7D4 /* KKUILabel.h in Headers */,
 				2FC2A63B233A40D100FBF7D4 /* KKUITextField.h in Headers */,
 				2FC2A5F62339FE4600FBF7D4 /* UIViewController+KKUtils.h in Headers */,
@@ -471,6 +478,7 @@
 				2FC2A5FF2339FFDB00FBF7D4 /* UIScreen+KKUtils.m in Sources */,
 				2FC2A5F32339FDAC00FBF7D4 /* UIView+KKUtils.m in Sources */,
 				2FC2A64C233B92A700FBF7D4 /* NSDate+KKUtils.m in Sources */,
+				2F134E84234C8F7700259562 /* AFHTTPSessionManager+KKUtils.m in Sources */,
 				2FC2A60E233A044A00FBF7D4 /* NSURLConnection+KKUtils.m in Sources */,
 				2FC2A624233A0C9900FBF7D4 /* KKArc.m in Sources */,
 				2FC2A5FB2339FEEE00FBF7D4 /* UIImage+KKUtils.m in Sources */,
