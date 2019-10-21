@@ -7,6 +7,7 @@
 //
 
 #import "NSString+KKUtils.h"
+#import "NSData+KKUtils.h"
 
 @implementation NSString (KKUtils)
 
@@ -100,6 +101,48 @@
     NSDate *date = [self shortDate];
 
     return date != nil;
+}
+
+- (NSString *)encryptWithKey:(NSString *)key {
+    if (!self || self.length == 0 ||
+        !key || key.length == 0) {
+        return nil;
+    }
+    
+    //Generate random init vector for encryption
+    NSString *iv = [NSString generateIV];
+    
+    //Encrypt with key and iv
+    NSData *encryptedData;
+    
+    if (key.length == 32) {
+        encryptedData = [[self dataUsingEncoding:NSUTF8StringEncoding] AES256EncryptedDataWithKey:key iv:iv];
+    } else {
+        encryptedData = [[self dataUsingEncoding:NSUTF8StringEncoding] AES128EncryptedDataWithKey:key iv:iv];
+    }
+    
+    //Convert data to hex
+    NSString *encryptedHex = [encryptedData hexadecimalString];
+    
+    //Convert iv to hex
+    NSString *ivHex = [[iv dataUsingEncoding:NSUTF8StringEncoding] hexadecimalString];
+    
+    return [NSString stringWithFormat:@"%@%@", ivHex, encryptedHex];
+}
+
+#pragma mark - Util
+
++ (NSString *)generateIV {
+    NSString *alphabet  = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXZY0123456789/=+";
+    NSMutableString *randomString = [NSMutableString stringWithCapacity:16];
+    
+    for (int i=0; i<16; i++) {
+        [randomString appendFormat: @"%C", [alphabet characterAtIndex: arc4random_uniform((int)[alphabet length])]];
+    }
+    
+    NSString *iv = randomString;
+    
+    return iv;
 }
 
 @end
