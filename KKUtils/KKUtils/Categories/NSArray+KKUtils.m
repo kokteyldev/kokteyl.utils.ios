@@ -46,4 +46,8 @@
     return set1.count > 0;
 }
 
+- (BOOL)hasZeroElementsOrContainsObject:(id)object{
+    return self.count == 0 || [self containsObject:object];
+}
+
 @end

@@ -35,8 +35,10 @@ FOUNDATION_EXPORT const unsigned char KKUtilsVersionString[];
 
 // Categories
 #import "NSArray+KKUtils.h"
+#import "NSData+KKUtils.h"
 #import "NSDate+KKUtils.h"
 #import "NSDictionary+KKUtils.h"
+#import "NSMutableArray+KKUtils.h"
 #import "NSNumber+KKUtils.h"
 #import "NSObject+KKUtils.h"
 #import "NSString+KKUtils.h"
@@ -50,5 +52,6 @@ FOUNDATION_EXPORT const unsigned char KKUtilsVersionString[];
 #import "UITableView+KKUtils.h"
 #import "UIView+KKUtils.h"
 #import "UIViewController+KKUtils.h"
+
 
 
