@@ -32,6 +32,7 @@ FOUNDATION_EXPORT const unsigned char KKUtilsVersionString[];
 #import "KKUITextField.h"
 #import "KKUITextView.h"
 #import "KKUIView.h"
+#import "KKAnimatedImageView.h"
 
 // Categories
 #import "NSArray+KKUtils.h"

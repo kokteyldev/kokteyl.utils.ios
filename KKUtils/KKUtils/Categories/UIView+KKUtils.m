@@ -53,6 +53,22 @@
     [UIView addLayoutConstraintsForContainerView:self andSubview:loadedSubview withPadding:0];
 }
 
+- (void)attachAndLoadXib:(NSString *)xibName inBundle:(NSString *)bundleName {
+    NSBundle* customBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:bundleName ofType:@"bundle"]];
+    NSArray *loadedViews;
+
+    if (customBundle) {
+        loadedViews = [customBundle loadNibNamed:xibName owner:self options:nil];
+    } else {
+        NSBundle* mainBundle = [NSBundle bundleForClass:[self class]];
+        loadedViews = [mainBundle loadNibNamed:xibName owner:self options:nil];
+    }
+
+    UIView *loadedSubview = [loadedViews firstObject];
+    [self addSubview:loadedSubview];
+    [UIView addLayoutConstraintsForContainerView:self andSubview:loadedSubview withPadding:0];
+}
+
 + (UIView*)loadFromXib:(NSString*)xibName {
     NSBundle *mainBundle = [NSBundle mainBundle];
     NSArray *loadedViews = [mainBundle loadNibNamed:xibName owner:self options:nil];

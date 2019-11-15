@@ -20,6 +20,7 @@
 - (void)removeSketchShadow;
 + (UIView *)createViewForFrame:(CGRect)frame withColor:(UIColor*)color;
 - (void)attachAndLoadXib:(NSString *)xibName;
+- (void)attachAndLoadXib:(NSString *)xibName inBundle:(NSString *)bundleName;
 + (UIView *)loadFromXib:(NSString *)xibName;
 + (void)addLayoutConstraintsForContainerView:(UIView *)containerView
                                   andSubview:(UIView *)subview
