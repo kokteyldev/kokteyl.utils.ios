@@ -25,6 +25,7 @@
 - (NSNumber *)decrementTillOne;
 - (NSString *)representAsCountDownTimerWithShowingHours:(BOOL)showHours
                                              andMinutes:(BOOL)showMinutes;
+- (NSString *)currencyStringWithCountryCode:(NSString *)code;
 
 @end
 

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F383F5723950702008CBD72 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F383F5523950702008CBD72 /* TableViewCell.m */; };
+		2F383F5823950702008CBD72 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F383F5623950702008CBD72 /* TableViewCell.xib */; };
+		2F383F5E23950F17008CBD72 /* KKUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA811F0237D7A53001E3601 /* KKUtils.framework */; };
+		2F383F5F23950F17008CBD72 /* KKUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA811F0237D7A53001E3601 /* KKUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FA811D3237D79BA001E3601 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA811D2237D79BA001E3601 /* AppDelegate.m */; };
 		2FA811D6237D79BA001E3601 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA811D5237D79BA001E3601 /* SceneDelegate.m */; };
 		2FA811D9237D79BA001E3601 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA811D8237D79BA001E3601 /* ViewController.m */; };
@@ -14,7 +18,6 @@
 		2FA811DE237D79BC001E3601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA811DD237D79BC001E3601 /* Assets.xcassets */; };
 		2FA811E1237D79BC001E3601 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA811DF237D79BC001E3601 /* LaunchScreen.storyboard */; };
 		2FA811E4237D79BC001E3601 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA811E3237D79BC001E3601 /* main.m */; };
-		2FA811F2237D7A8F001E3601 /* KKUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA811F0237D7A53001E3601 /* KKUtils.framework */; };
 		2FA8121B237D7B87001E3601 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA811F8237D7B86001E3601 /* UIProgressView+AFNetworking.m */; };
 		2FA8121C237D7B87001E3601 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA811FA237D7B86001E3601 /* UIRefreshControl+AFNetworking.m */; };
 		2FA8121D237D7B87001E3601 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA811FD237D7B86001E3601 /* AFNetworkActivityIndicatorManager.m */; };
@@ -30,7 +33,6 @@
 		2FA81227237D7B87001E3601 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA81215237D7B87001E3601 /* AFURLRequestSerialization.m */; };
 		2FA81228237D7B87001E3601 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA81217237D7B87001E3601 /* AFNetworkReachabilityManager.m */; };
 		2FA81229237D7B87001E3601 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA81218237D7B87001E3601 /* AFSecurityPolicy.m */; };
-		2FA81231237D7EA3001E3601 /* KKUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA811F0237D7A53001E3601 /* KKUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FA81243237D8049001E3601 /* KKUtilsAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2FA81242237D8049001E3601 /* KKUtilsAssets.bundle */; };
 /* End PBXBuildFile section */
 
@@ -52,13 +54,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2FA811F4237D7A8F001E3601 /* Embed Frameworks */ = {
+		2F383F6023950F18008CBD72 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2FA81231237D7EA3001E3601 /* KKUtils.framework in Embed Frameworks */,
+				2F383F5F23950F17008CBD72 /* KKUtils.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +68,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2F383F5423950702008CBD72 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		2F383F5523950702008CBD72 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		2F383F5623950702008CBD72 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		2FA811CE237D79BA001E3601 /* KKUtilsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKUtilsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA811D1237D79BA001E3601 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2FA811D2237D79BA001E3601 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -121,19 +126,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FA811F2237D7A8F001E3601 /* KKUtils.framework in Frameworks */,
+				2F383F5E23950F17008CBD72 /* KKUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F383F5D23950F17008CBD72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2FA811C5237D79BA001E3601 = {
 			isa = PBXGroup;
 			children = (
 				2FA811EA237D7A48001E3601 /* Vendor */,
 				2FA811D0237D79BA001E3601 /* KKUtilsDemo */,
 				2FA811CF237D79BA001E3601 /* Products */,
+				2F383F5D23950F17008CBD72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +167,9 @@
 				2FA811D5237D79BA001E3601 /* SceneDelegate.m */,
 				2FA811D7237D79BA001E3601 /* ViewController.h */,
 				2FA811D8237D79BA001E3601 /* ViewController.m */,
+				2F383F5423950702008CBD72 /* TableViewCell.h */,
+				2F383F5523950702008CBD72 /* TableViewCell.m */,
+				2F383F5623950702008CBD72 /* TableViewCell.xib */,
 				2FA811DA237D79BA001E3601 /* Main.storyboard */,
 				2FA811DD237D79BC001E3601 /* Assets.xcassets */,
 				2FA811DF237D79BC001E3601 /* LaunchScreen.storyboard */,
@@ -258,7 +274,7 @@
 				2FA811CA237D79BA001E3601 /* Sources */,
 				2FA811CB237D79BA001E3601 /* Frameworks */,
 				2FA811CC237D79BA001E3601 /* Resources */,
-				2FA811F4237D7A8F001E3601 /* Embed Frameworks */,
+				2F383F6023950F18008CBD72 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -330,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FA811E1237D79BC001E3601 /* LaunchScreen.storyboard in Resources */,
+				2F383F5823950702008CBD72 /* TableViewCell.xib in Resources */,
 				2FA811DE237D79BC001E3601 /* Assets.xcassets in Resources */,
 				2FA81243237D8049001E3601 /* KKUtilsAssets.bundle in Resources */,
 				2FA811DC237D79BA001E3601 /* Main.storyboard in Resources */,
@@ -356,6 +373,7 @@
 				2FA81226237D7B87001E3601 /* AFURLSessionManager.m in Sources */,
 				2FA81228237D7B87001E3601 /* AFNetworkReachabilityManager.m in Sources */,
 				2FA81220237D7B87001E3601 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				2F383F5723950702008CBD72 /* TableViewCell.m in Sources */,
 				2FA811D6237D79BA001E3601 /* SceneDelegate.m in Sources */,
 				2FA81227237D7B87001E3601 /* AFURLRequestSerialization.m in Sources */,
 				2FA8121D237D7B87001E3601 /* AFNetworkActivityIndicatorManager.m in Sources */,

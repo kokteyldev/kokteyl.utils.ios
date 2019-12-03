@@ -299,4 +299,21 @@
      ];
 }
 
+- (NSLayoutConstraint *)constraintForLayoutAttribute:(NSLayoutAttribute)layoutAttribute {
+
+    if (!self.superview) {
+        return nil;
+    }
+
+    for (NSLayoutConstraint *layoutConstraint in self.superview.constraints) {
+        if (
+            (self == layoutConstraint.firstItem && layoutConstraint.firstAttribute == layoutAttribute) ||
+            (self == layoutConstraint.secondItem && layoutConstraint.secondAttribute == layoutAttribute)
+            ) {
+            return layoutConstraint;
+        }
+    }
+    return nil;
+}
+
 @end

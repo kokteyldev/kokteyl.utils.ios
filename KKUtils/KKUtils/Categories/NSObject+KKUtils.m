@@ -25,11 +25,9 @@
 - (void)addHeaders:(NSDictionary *)headers {
     if ([self isKindOfClass:[AFHTTPSessionManager class]]) {
         if (headers && [headers allKeys].count > 0) {
-            AFHTTPRequestSerializer *requestSerializer = [AFHTTPRequestSerializer serializer];
             for (NSString *key in [headers allKeys]) {
-                [requestSerializer setValue:[headers objectForKey:key] forHTTPHeaderField:key];
+                [((AFHTTPSessionManager *) self).requestSerializer setValue:[headers objectForKey:key] forHTTPHeaderField:key];
             }
-            ((AFHTTPSessionManager *) self).requestSerializer = requestSerializer;
         }
     }
 }

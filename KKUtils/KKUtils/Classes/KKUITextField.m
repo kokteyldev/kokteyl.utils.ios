@@ -42,4 +42,21 @@
     [self layoutIfNeeded];
 }
 
+#pragma mark - Protection
+
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
+    if (_isProtected &&
+        (action == @selector(paste:) ||
+        action == @selector(copy:) ||
+        action == @selector(selectAll:) ||
+        action == @selector(select:) ||
+        action == @selector(cut:) ||
+        action == @selector(delete:)
+        )
+        ) {
+            return NO;
+    }
+    return [super canPerformAction:action withSender:sender];
+}
+
 @end

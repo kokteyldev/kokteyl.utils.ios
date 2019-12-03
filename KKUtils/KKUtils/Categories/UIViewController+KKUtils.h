@@ -20,6 +20,7 @@
 - (void)showAlertForMessage:(NSString *)message;
 
 + (UIViewController *)topMostController;
++ (void)presentController:(NSString *)controller fromStoryboard:(NSString *)storyboard;
 
 @end
 

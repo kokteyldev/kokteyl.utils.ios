@@ -17,4 +17,25 @@
     return [formatter stringFromDate:self];
 }
 
+- (NSDate *)startOfWeek {
+    NSDate *startOfWeek;
+    NSTimeInterval interval;
+    [[NSCalendar currentCalendar] rangeOfUnit:NSCalendarUnitWeekOfYear
+                                    startDate:&startOfWeek
+                                     interval:&interval
+                                      forDate:self];
+    return startOfWeek;
+}
+
+- (NSDate *)endOfWeek {
+    NSDate *startOfWeek;
+    NSTimeInterval interval;
+    [[NSCalendar currentCalendar] rangeOfUnit:NSCalendarUnitWeekOfYear
+                                    startDate:&startOfWeek
+                                     interval:&interval
+                                      forDate:self];
+    return [startOfWeek dateByAddingTimeInterval:interval - 1];
+}
+
+
 @end

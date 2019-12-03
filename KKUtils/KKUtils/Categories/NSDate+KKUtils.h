@@ -1,3 +1,4 @@
+
 //
 //  NSDate+KKUtils.h
 //  KKUtils
@@ -11,5 +12,7 @@
 @interface NSDate (KKUtils)
 
 - (NSString *)shortDateString;
+- (NSDate *)startOfWeek;
+- (NSDate *)endOfWeek;
 
 @end

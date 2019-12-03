@@ -44,6 +44,7 @@
 - (void)closeAnimated;
 - (UIViewController *)parentViewController;
 + (void)pinSubview:(UIView *)subview toTopLefInContainerView:(UIView *)containerView;
+- (NSLayoutConstraint *)constraintForLayoutAttribute:(NSLayoutAttribute)layoutAttribute;
 
 @end
 

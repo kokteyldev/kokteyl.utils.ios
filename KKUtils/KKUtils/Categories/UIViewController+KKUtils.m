@@ -8,6 +8,7 @@
 
 #import "UIViewController+KKUtils.h"
 #import "UIImage+KKUtils.h"
+#import "UIStoryboard+KKUtils.h"
 #import <SafariServices/SafariServices.h>
 
 @implementation UIViewController (KKUtils)
@@ -120,5 +121,14 @@
         return rootViewController;
     }
 }
+
++ (void)presentController:(NSString *)controller fromStoryboard:(NSString *)storyboard {
+    UINavigationController *nc = [[UIStoryboard storyboardWithName:storyboard] instantiateViewControllerWithIdentifier:controller];
+    nc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    nc.modalPresentationStyle = UIModalPresentationFullScreen;
+
+    [[UIViewController topMostController] presentViewController:nc animated:YES completion:nil];
+}
+
 
 @end

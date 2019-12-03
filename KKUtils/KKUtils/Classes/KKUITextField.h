@@ -21,6 +21,10 @@
  @brief Setup UITextField text padding for left.
  */
 @property (nonatomic) IBInspectable CGFloat edgeInsetLeft;
+/**
+ @brief Set textfield as protected. User interaction is enabled but text cannot be interacted.
+*/
+@property (nonatomic) IBInspectable BOOL isProtected;
 
 @end
 

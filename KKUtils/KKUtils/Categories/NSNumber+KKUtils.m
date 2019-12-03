@@ -108,4 +108,13 @@
     }
 }
 
+- (NSString *)currencyStringWithCountryCode:(NSString *)code {
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    numberFormatter.locale = [NSLocale localeWithLocaleIdentifier:code];
+    numberFormatter.usesGroupingSeparator = YES;
+    numberFormatter.numberStyle = NSNumberFormatterCurrencyStyle;
+
+    return [numberFormatter stringFromNumber:self];
+}
+
 @end
