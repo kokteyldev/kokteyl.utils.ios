@@ -277,7 +277,7 @@ CGFloat const kQPSlideBounceValue = 10.0f;
     }];
 }
 
-- (void)setConstraintsToShowAllButtons:(BOOL)animated notifyDelegateDidOpen:(BOOL)notifyDelegate
+- (void)setConstraintsToShowAllButtons:(BOOL)animated notifyDelegateDidOpen:(BOOL)notifyDelegate {
 
     if (animated) {
         [_feedbackGenerator selectionChanged];
