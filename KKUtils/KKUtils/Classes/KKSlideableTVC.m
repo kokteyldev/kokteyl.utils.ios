@@ -23,6 +23,8 @@ CGFloat const kQPSlideBounceValue = 10.0f;
 
     BOOL _isPanInProgress;
     BOOL _isPreviewEnabled;
+
+    UISelectionFeedbackGenerator *_feedbackGenerator;
 }
 
 #pragma mark - View lifecycle
@@ -71,6 +73,10 @@ CGFloat const kQPSlideBounceValue = 10.0f;
                 _isPanInProgress = YES;
                 _panStartPoint = [recognizer translationInView:_slideableView];
                 _startingConstraintConstant = _slideableViewConstraint.constant;
+
+                // Instantiate a new generator.
+                _feedbackGenerator = [[UISelectionFeedbackGenerator alloc] init];
+                [_feedbackGenerator prepare];
                 break;
             }
 
@@ -161,6 +167,10 @@ CGFloat const kQPSlideBounceValue = 10.0f;
                 _isPanInProgress = YES;
                 _panStartPoint = [recognizer translationInView:_slideableView];
                 _startingConstraintConstant = _slideableViewConstraint.constant;
+
+                // Instantiate a new generator.
+                _feedbackGenerator = [[UISelectionFeedbackGenerator alloc] init];
+                [_feedbackGenerator prepare];
                 break;
             }
 
@@ -248,6 +258,10 @@ CGFloat const kQPSlideBounceValue = 10.0f;
 
 - (void)resetConstraintContstantsToZero:(BOOL)animated notifyDelegateDidClose:(BOOL)endEditing {
 
+    if (animated) {
+        [_feedbackGenerator selectionChanged];
+    }
+
     if (_startingConstraintConstant == 0 &&
         _slideableViewConstraint.constant == 0) {
         return;
@@ -263,7 +277,11 @@ CGFloat const kQPSlideBounceValue = 10.0f;
     }];
 }
 
-- (void)setConstraintsToShowAllButtons:(BOOL)animated notifyDelegateDidOpen:(BOOL)notifyDelegate {
+- (void)setConstraintsToShowAllButtons:(BOOL)animated notifyDelegateDidOpen:(BOOL)notifyDelegate
+
+    if (animated) {
+        [_feedbackGenerator selectionChanged];
+    }
 
     if (_startingConstraintConstant == _maxSlideDistance &&
         _slideableViewConstraint.constant == _maxSlideDistance) {

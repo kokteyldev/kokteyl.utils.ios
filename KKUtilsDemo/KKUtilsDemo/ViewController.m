@@ -103,5 +103,41 @@ NSString* const kKKCellIdentifier = @"TableViewCell";
 
 }
 
+#pragma mark - <UIScrollViewDelegate>
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    [self disablePanningOfCells];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    [self disablePanningOfCells];
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    if (!decelerate) {
+        [self enablePanningOfCells];
+    }
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    [self enablePanningOfCells];
+}
+
+- (void)enablePanningOfCells {
+    [self changePanningStatusOfCells:YES];
+}
+
+- (void)disablePanningOfCells {
+    [self changePanningStatusOfCells:NO];
+}
+
+- (void)changePanningStatusOfCells:(BOOL)isPanningEnabled {
+    for (KKSlideableTVC *slideableCell in _tableView.visibleCells) {
+        slideableCell.isPanEnabled = isPanningEnabled;
+    }
+}
+
+
+
 
 @end

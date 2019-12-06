@@ -14,6 +14,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    self.isHapticFeedbackEnabled = YES;
+
     // Initialization code
 }
 
