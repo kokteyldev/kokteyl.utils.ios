@@ -74,9 +74,11 @@ CGFloat const kQPSlideBounceValue = 10.0f;
                 _panStartPoint = [recognizer translationInView:_slideableView];
                 _startingConstraintConstant = _slideableViewConstraint.constant;
 
-                // Instantiate a new generator.
-                _feedbackGenerator = [[UISelectionFeedbackGenerator alloc] init];
-                [_feedbackGenerator prepare];
+                if (_isHapticFeedbackEnabled) {
+                    // Instantiate a new generator.
+                    _feedbackGenerator = [[UISelectionFeedbackGenerator alloc] init];
+                    [_feedbackGenerator prepare];
+                }
                 break;
             }
 
@@ -168,9 +170,11 @@ CGFloat const kQPSlideBounceValue = 10.0f;
                 _panStartPoint = [recognizer translationInView:_slideableView];
                 _startingConstraintConstant = _slideableViewConstraint.constant;
 
-                // Instantiate a new generator.
-                _feedbackGenerator = [[UISelectionFeedbackGenerator alloc] init];
-                [_feedbackGenerator prepare];
+                if (_isHapticFeedbackEnabled) {
+                    // Instantiate a new generator.
+                    _feedbackGenerator = [[UISelectionFeedbackGenerator alloc] init];
+                    [_feedbackGenerator prepare];
+                }
                 break;
             }
 
@@ -258,7 +262,7 @@ CGFloat const kQPSlideBounceValue = 10.0f;
 
 - (void)resetConstraintContstantsToZero:(BOOL)animated notifyDelegateDidClose:(BOOL)endEditing {
 
-    if (animated) {
+    if (animated && _isHapticFeedbackEnabled) {
         [_feedbackGenerator selectionChanged];
     }
 
@@ -279,7 +283,7 @@ CGFloat const kQPSlideBounceValue = 10.0f;
 
 - (void)setConstraintsToShowAllButtons:(BOOL)animated notifyDelegateDidOpen:(BOOL)notifyDelegate {
 
-    if (animated) {
+    if (animated && _isHapticFeedbackEnabled) {
         [_feedbackGenerator selectionChanged];
     }
 
