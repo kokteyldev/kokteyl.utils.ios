@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TableViewCell : KKSlideableTVC
-@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) id data;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@end
 
-
+@interface CustomObject:NSObject
+@property (nonatomic, strong) NSString *name;
++ (instancetype)customObjectWithName:(NSString *)name;
 @end
 

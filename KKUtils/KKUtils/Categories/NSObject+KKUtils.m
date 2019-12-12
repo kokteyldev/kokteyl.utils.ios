@@ -13,11 +13,17 @@
 @implementation NSObject (KKUtils)
 
 - (void)bindValuesOfObject:(NSObject *)object {
+    if (!object) {
+        return;
+    }
     if (/*[self conformsToProtocol:@protocol(KKIMappable)] && */
         [self respondsToSelector:@selector(dataKeyPathsByOutletKeyPath)]) {
         NSDictionary* mapping = [(id<KKIMappable>)self dataKeyPathsByOutletKeyPath];
         for (NSString* key in mapping) {
-            [self setValue:[object valueForKeyPath:mapping[key]] forKeyPath:key];
+            id subObject = [object valueForKeyPath:mapping[key]];
+            if (subObject) {
+                [self setValue:subObject forKeyPath:key];
+            }
         }
     }
 }

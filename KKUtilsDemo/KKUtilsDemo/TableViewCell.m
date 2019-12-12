@@ -8,6 +8,8 @@
 
 #import "TableViewCell.h"
 
+@interface TableViewCell () <KKIMappable> @end
+
 @implementation TableViewCell {
     IBOutlet UILabel *LBLName;
 }
@@ -25,8 +27,17 @@
     // Configure the view for the selected state
 }
 
-- (void)setName:(NSString *)name {
-    LBLName.text = name;
+- (void)setData:(id)data {
+    _data = data;
+    [self bindValuesOfObject:data];
+}
+
+#pragma mark - <KKIMappable>
+
+- (NSDictionary *)dataKeyPathsByOutletKeyPath {
+    return @{
+        @"LBLName.text" : @"name"
+    };
 }
 
 @end
