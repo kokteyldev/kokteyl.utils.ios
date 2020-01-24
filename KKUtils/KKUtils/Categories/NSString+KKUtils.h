@@ -6,12 +6,16 @@
 //  Copyright © 2019 Tolga Seremet. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface NSString (KKUtils)
 
 - (NSString *)trimSpaces;
 - (NSDate *)shortDate;
+
+- (UIImage *)qrCodeImage;
+- (NSString *)currencySymbol;
+- (NSNumber *)localizedNumber;
 
 - (BOOL)isValidPhoneNumber;
 - (BOOL)isValidPhoneNumberForRegexPattern:(NSString *)regexPattern;

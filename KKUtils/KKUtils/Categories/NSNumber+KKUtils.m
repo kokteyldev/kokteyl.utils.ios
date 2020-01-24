@@ -117,4 +117,13 @@
     return [numberFormatter stringFromNumber:self];
 }
 
+- (NSString *)localizedCurrencyString {
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc]init];
+    numberFormatter.locale = [NSLocale currentLocale];
+    numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
+    numberFormatter.usesGroupingSeparator = NO;
+
+    return [numberFormatter stringFromNumber:self];
+}
+
 @end

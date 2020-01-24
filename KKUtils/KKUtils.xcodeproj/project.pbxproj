@@ -74,7 +74,26 @@
 		2FC2A64C233B92A700FBF7D4 /* NSDate+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A64A233B92A700FBF7D4 /* NSDate+KKUtils.m */; };
 		9E96EF74235D8FCC005C5630 /* NSData+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E96EF72235D8FCC005C5630 /* NSData+KKUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E96EF75235D8FCC005C5630 /* NSData+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E96EF73235D8FCC005C5630 /* NSData+KKUtils.m */; };
+		9EAC9FD223DAE043001222BD /* NSURL+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EAC9FD023DAE043001222BD /* NSURL+KKUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EAC9FD323DAE043001222BD /* NSURL+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAC9FD123DAE043001222BD /* NSURL+KKUtils.m */; };
+		9EAC9FDD23DAE2E5001222BD /* KKUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC2A5C82339F67600FBF7D4 /* KKUtils.framework */; };
+		9EAC9FE423DAEAD7001222BD /* KKUtilsCategoriesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAC9FE323DAEAD7001222BD /* KKUtilsCategoriesTests.m */; };
+		9EAC9FE523DB1CFA001222BD /* NSURL+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAC9FD123DAE043001222BD /* NSURL+KKUtils.m */; };
+		9EAC9FE823DB27A5001222BD /* UIApplication+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EAC9FE623DB27A5001222BD /* UIApplication+KKUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EAC9FE923DB27A5001222BD /* UIApplication+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAC9FE723DB27A5001222BD /* UIApplication+KKUtils.m */; };
+		9EAC9FEC23DB2BFE001222BD /* KKUINavigationItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EAC9FEA23DB2BFE001222BD /* KKUINavigationItem.h */; };
+		9EAC9FED23DB2BFE001222BD /* KKUINavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAC9FEB23DB2BFE001222BD /* KKUINavigationItem.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EAC9FDE23DAE2E5001222BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FC2A5BF2339F67600FBF7D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FC2A5C72339F67600FBF7D4;
+			remoteInfo = KKUtils;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2F08E0BD239501AD000D6EBD /* KKSlideableTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSlideableTVC.h; sourceTree = "<group>"; };
@@ -183,6 +202,15 @@
 		2FC2A64A233B92A700FBF7D4 /* NSDate+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+KKUtils.m"; sourceTree = "<group>"; };
 		9E96EF72235D8FCC005C5630 /* NSData+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+KKUtils.h"; sourceTree = "<group>"; };
 		9E96EF73235D8FCC005C5630 /* NSData+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+KKUtils.m"; sourceTree = "<group>"; };
+		9EAC9FD023DAE043001222BD /* NSURL+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+KKUtils.h"; sourceTree = "<group>"; };
+		9EAC9FD123DAE043001222BD /* NSURL+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+KKUtils.m"; sourceTree = "<group>"; };
+		9EAC9FD823DAE2E5001222BD /* KKUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KKUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EAC9FDC23DAE2E5001222BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EAC9FE323DAEAD7001222BD /* KKUtilsCategoriesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKUtilsCategoriesTests.m; sourceTree = "<group>"; };
+		9EAC9FE623DB27A5001222BD /* UIApplication+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+KKUtils.h"; sourceTree = "<group>"; };
+		9EAC9FE723DB27A5001222BD /* UIApplication+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+KKUtils.m"; sourceTree = "<group>"; };
+		9EAC9FEA23DB2BFE001222BD /* KKUINavigationItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKUINavigationItem.h; sourceTree = "<group>"; };
+		9EAC9FEB23DB2BFE001222BD /* KKUINavigationItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKUINavigationItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +225,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EAC9FD523DAE2E5001222BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EAC9FDD23DAE2E5001222BD /* KKUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +327,7 @@
 			children = (
 				2FC2A5CA2339F67600FBF7D4 /* KKUtils */,
 				2FA81237237D7F0C001E3601 /* KKUtilsAssets */,
+				9EAC9FD923DAE2E5001222BD /* KKUtilsTests */,
 				2FC2A5C92339F67600FBF7D4 /* Products */,
 				2F134E35234B33CF00259562 /* Extras */,
 			);
@@ -301,6 +338,7 @@
 			children = (
 				2FC2A5C82339F67600FBF7D4 /* KKUtils.framework */,
 				2FA81236237D7F0C001E3601 /* KKUtilsAssets.bundle */,
+				9EAC9FD823DAE2E5001222BD /* KKUtilsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -338,8 +376,12 @@
 				2FC2A601233A011C00FBF7D4 /* NSObject+KKUtils.m */,
 				2FC2A614233A09B000FBF7D4 /* NSString+KKUtils.h */,
 				2FC2A615233A09B000FBF7D4 /* NSString+KKUtils.m */,
+				9EAC9FD023DAE043001222BD /* NSURL+KKUtils.h */,
+				9EAC9FD123DAE043001222BD /* NSURL+KKUtils.m */,
 				2FC2A60D233A044A00FBF7D4 /* NSURLConnection+KKUtils.h */,
 				2FC2A60C233A044A00FBF7D4 /* NSURLConnection+KKUtils.m */,
+				9EAC9FE623DB27A5001222BD /* UIApplication+KKUtils.h */,
+				9EAC9FE723DB27A5001222BD /* UIApplication+KKUtils.m */,
 				2FC2A5E82339FBCF00FBF7D4 /* UICollectionView+KKUtils.h */,
 				2FC2A5E92339FBCF00FBF7D4 /* UICollectionView+KKUtils.m */,
 				2FC2A5D92339F77D00FBF7D4 /* UIColor+KKUtils.h */,
@@ -393,6 +435,8 @@
 				2FC2A63E233A416100FBF7D4 /* KKUIImageView.m */,
 				2FC2A631233A124500FBF7D4 /* KKUILabel.h */,
 				2FC2A632233A124500FBF7D4 /* KKUILabel.m */,
+				9EAC9FEA23DB2BFE001222BD /* KKUINavigationItem.h */,
+				9EAC9FEB23DB2BFE001222BD /* KKUINavigationItem.m */,
 				2FC2A639233A40D100FBF7D4 /* KKUITextField.h */,
 				2FC2A63A233A40D100FBF7D4 /* KKUITextField.m */,
 				2FC2A641233A425F00FBF7D4 /* KKUITextView.h */,
@@ -409,6 +453,15 @@
 				2FC2A62B233A10AC00FBF7D4 /* KKMacros.h */,
 			);
 			path = Macros;
+			sourceTree = "<group>";
+		};
+		9EAC9FD923DAE2E5001222BD /* KKUtilsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EAC9FE323DAEAD7001222BD /* KKUtilsCategoriesTests.m */,
+				9EAC9FDC23DAE2E5001222BD /* Info.plist */,
+			);
+			path = KKUtilsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,6 +482,7 @@
 				2FC2A607233A036500FBF7D4 /* KKIMappable.h in Headers */,
 				2FC2A62C233A10AC00FBF7D4 /* KKMacros.h in Headers */,
 				2FC2A5FA2339FEEE00FBF7D4 /* UIImage+KKUtils.h in Headers */,
+				9EAC9FEC23DB2BFE001222BD /* KKUINavigationItem.h in Headers */,
 				2FA8122C237D7C5D001E3601 /* KKAnimatedImageView.h in Headers */,
 				2FC2A5F22339FDAC00FBF7D4 /* UIView+KKUtils.h in Headers */,
 				2FC2A612233A064200FBF7D4 /* UIImageView+KKUtils.h in Headers */,
@@ -441,7 +495,9 @@
 				2F4D587523740F470066D4D6 /* NSMutableArray+KKUtils.h in Headers */,
 				2FC2A5E62339FB0C00FBF7D4 /* NSNumber+KKUtils.h in Headers */,
 				2F383F6723953CD3008CBD72 /* KKRefreshControl.h in Headers */,
+				9EAC9FD223DAE043001222BD /* NSURL+KKUtils.h in Headers */,
 				2FC2A64B233B92A700FBF7D4 /* NSDate+KKUtils.h in Headers */,
+				9EAC9FE823DB27A5001222BD /* UIApplication+KKUtils.h in Headers */,
 				2F383F63239538EF008CBD72 /* KKTableViewCell.h in Headers */,
 				2FC2A637233A12DC00FBF7D4 /* KKUIButton.h in Headers */,
 				2FC2A5E22339FA8700FBF7D4 /* NSDictionary+KKUtils.h in Headers */,
@@ -493,6 +549,24 @@
 			productReference = 2FC2A5C82339F67600FBF7D4 /* KKUtils.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		9EAC9FD723DAE2E5001222BD /* KKUtilsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EAC9FE023DAE2E5001222BD /* Build configuration list for PBXNativeTarget "KKUtilsTests" */;
+			buildPhases = (
+				9EAC9FD423DAE2E5001222BD /* Sources */,
+				9EAC9FD523DAE2E5001222BD /* Frameworks */,
+				9EAC9FD623DAE2E5001222BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EAC9FDF23DAE2E5001222BD /* PBXTargetDependency */,
+			);
+			name = KKUtilsTests;
+			productName = KKUtilsTests;
+			productReference = 9EAC9FD823DAE2E5001222BD /* KKUtilsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -507,6 +581,9 @@
 					};
 					2FC2A5C72339F67600FBF7D4 = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					9EAC9FD723DAE2E5001222BD = {
+						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
@@ -525,6 +602,7 @@
 			targets = (
 				2FC2A5C72339F67600FBF7D4 /* KKUtils */,
 				2FA81235237D7F0C001E3601 /* KKUtilsAssets */,
+				9EAC9FD723DAE2E5001222BD /* KKUtilsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -543,6 +621,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FA81230237D7D2F001E3601 /* KKAnimatedImageView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EAC9FD623DAE2E5001222BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,12 +655,15 @@
 				2FC2A63C233A40D100FBF7D4 /* KKUITextField.m in Sources */,
 				2FC2A617233A09B000FBF7D4 /* NSString+KKUtils.m in Sources */,
 				2F08E0C0239501AD000D6EBD /* KKSlideableTVC.m in Sources */,
+				9EAC9FE923DB27A5001222BD /* UIApplication+KKUtils.m in Sources */,
 				2FC2A644233A425F00FBF7D4 /* KKUITextView.m in Sources */,
+				9EAC9FED23DB2BFE001222BD /* KKUINavigationItem.m in Sources */,
 				2FC2A5EB2339FBCF00FBF7D4 /* UICollectionView+KKUtils.m in Sources */,
 				2FC2A648233A628800FBF7D4 /* UIStoryboard+KKUtils.m in Sources */,
 				2FC2A638233A12DC00FBF7D4 /* KKUIButton.m in Sources */,
 				2FC2A61F233A0AFA00FBF7D4 /* KKPaginatedList.m in Sources */,
 				2FC2A634233A124500FBF7D4 /* KKUILabel.m in Sources */,
+				9EAC9FD323DAE043001222BD /* NSURL+KKUtils.m in Sources */,
 				2F383F6823953CD3008CBD72 /* KKRefreshControl.m in Sources */,
 				2FC2A5F72339FE4600FBF7D4 /* UIViewController+KKUtils.m in Sources */,
 				2F383F64239538EF008CBD72 /* KKTableViewCell.m in Sources */,
@@ -594,7 +682,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9EAC9FD423DAE2E5001222BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EAC9FE523DB1CFA001222BD /* NSURL+KKUtils.m in Sources */,
+				9EAC9FE423DAEAD7001222BD /* KKUtilsCategoriesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EAC9FDF23DAE2E5001222BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FC2A5C72339F67600FBF7D4 /* KKUtils */;
+			targetProxy = 9EAC9FDE23DAE2E5001222BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2FA8123A237D7F0C001E3601 /* Debug */ = {
@@ -772,6 +877,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kokteyl.KKUtils;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -798,9 +904,46 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kokteyl.KKUtils;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9EAC9FE123DAE2E5001222BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AUH76QNW9;
+				INFOPLIST_FILE = KKUtilsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kokteyl.KKUtilsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9EAC9FE223DAE2E5001222BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AUH76QNW9;
+				INFOPLIST_FILE = KKUtilsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kokteyl.KKUtilsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -831,6 +974,15 @@
 			buildConfigurations = (
 				2FC2A5D12339F67600FBF7D4 /* Debug */,
 				2FC2A5D22339F67600FBF7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EAC9FE023DAE2E5001222BD /* Build configuration list for PBXNativeTarget "KKUtilsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EAC9FE123DAE2E5001222BD /* Debug */,
+				9EAC9FE223DAE2E5001222BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

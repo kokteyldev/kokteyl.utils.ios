@@ -22,6 +22,34 @@
     return [dateFormatter dateFromString:self];
 }
 
+- (UIImage *)qrCodeImage {
+    if (!self.length) return nil;
+
+    NSData *data = [[NSData alloc]initWithBase64EncodedString:self options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    return [UIImage imageWithData:data];
+}
+
+- (NSString *)currencySymbol {
+
+    if ([self isEqualToString:@"\%"]) {
+        return @"\%";
+    }
+
+    NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:self];
+    return [NSString stringWithFormat:@"%@",[locale displayNameForKey:NSLocaleCurrencySymbol value:self]];
+}
+
+- (NSNumber *)localizedNumber {
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    numberFormatter.locale = [NSLocale currentLocale];
+    numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
+    numberFormatter.usesGroupingSeparator = NO;
+
+    return [numberFormatter numberFromString:self];
+}
+
+#pragma mark - Validators
+
 - (BOOL)isValidPhoneNumber {
     if (self == nil || self.length == 0) return NO;
 
