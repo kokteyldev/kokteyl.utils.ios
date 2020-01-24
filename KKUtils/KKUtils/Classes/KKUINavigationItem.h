@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @brief Set localized key of navigation item.
  */
-@property (nonatomic) IBInspectable NSString* localizedTitleKey;
+@property (nonatomic) IBInspectable NSString* localizedKey;
 @end
 
 NS_ASSUME_NONNULL_END

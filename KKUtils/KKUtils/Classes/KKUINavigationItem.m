@@ -10,9 +10,9 @@
 
 @implementation KKUINavigationItem
 
-- (void)setLocalizedTitleKey:(NSString *)localizedTitleKey {
-    _localizedTitleKey = localizedTitleKey;
-    self.title = [[NSBundle mainBundle] localizedStringForKey:(_localizedTitleKey) value:@"" table:nil];
+- (void)setLocalizedKey:(NSString *)localizedKey {
+    _localizedKey = localizedKey;
+    self.title = [[NSBundle mainBundle] localizedStringForKey:(_localizedKey) value:@"" table:nil];
 }
 
 @end
