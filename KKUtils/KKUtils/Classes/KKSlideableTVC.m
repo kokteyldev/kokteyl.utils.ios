@@ -9,7 +9,7 @@
 #import "KKSlideableTVC.h"
 #import "UIView+KKUtils.h"
 
-CGFloat const kQPSlideBounceValue = 10.0f;
+CGFloat const kKKSlideBounceValue = 10.0f;
 
 @interface KKSlideableTVC () <UIGestureRecognizerDelegate> @end
 
@@ -271,7 +271,7 @@ CGFloat const kQPSlideBounceValue = 10.0f;
         return;
     }
 
-    _slideableViewConstraint.constant = -kQPSlideBounceValue;
+    _slideableViewConstraint.constant = -kKKSlideBounceValue;
 
     [self updateConstraintsIfNeeded:animated completion:^(BOOL finished) {
         self->_slideableViewConstraint.constant = 0;
@@ -292,7 +292,7 @@ CGFloat const kQPSlideBounceValue = 10.0f;
         return;
     }
 
-    _slideableViewConstraint.constant = _maxSlideDistance + kQPSlideBounceValue;
+    _slideableViewConstraint.constant = _maxSlideDistance + kKKSlideBounceValue;
 
     [self updateConstraintsIfNeeded:animated completion:^(BOOL finished) {
         self->_slideableViewConstraint.constant = self->_maxSlideDistance;

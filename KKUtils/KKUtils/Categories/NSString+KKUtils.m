@@ -144,16 +144,16 @@
     NSData *encryptedData;
     
     if (key.length == 32) {
-        encryptedData = [[self dataUsingEncoding:NSUTF8StringEncoding] AES256EncryptedDataWithKey:key iv:iv];
+        encryptedData = [[self dataUsingEncoding:NSUTF8StringEncoding] KKAES256EncryptedDataWithKey:key iv:iv];
     } else {
-        encryptedData = [[self dataUsingEncoding:NSUTF8StringEncoding] AES128EncryptedDataWithKey:key iv:iv];
+        encryptedData = [[self dataUsingEncoding:NSUTF8StringEncoding] KKAES128EncryptedDataWithKey:key iv:iv];
     }
     
     //Convert data to hex
-    NSString *encryptedHex = [encryptedData hexadecimalString];
+    NSString *encryptedHex = [encryptedData KKHexadecimalString];
     
     //Convert iv to hex
-    NSString *ivHex = [[iv dataUsingEncoding:NSUTF8StringEncoding] hexadecimalString];
+    NSString *ivHex = [[iv dataUsingEncoding:NSUTF8StringEncoding] KKHexadecimalString];
     
     return [NSString stringWithFormat:@"%@%@", ivHex, encryptedHex];
 }

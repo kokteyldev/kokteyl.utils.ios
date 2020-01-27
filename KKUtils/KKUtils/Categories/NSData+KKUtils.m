@@ -11,35 +11,35 @@
 
 @implementation NSData (KKUtils)
 
-- (NSData *)AES128EncryptedDataWithKey:(NSString *)key {
-    return [self AES128EncryptedDataWithKey:key iv:nil];
+- (NSData *)KKAES128EncryptedDataWithKey:(NSString *)key {
+    return [self KKAES128EncryptedDataWithKey:key iv:nil];
 }
 
-- (NSData *)AES128DecryptedDataWithKey:(NSString *)key {
-    return [self AES128DecryptedDataWithKey:key iv:nil];
+- (NSData *)KKAES128DecryptedDataWithKey:(NSString *)key {
+    return [self KKAES128DecryptedDataWithKey:key iv:nil];
 }
 
-- (NSData *)AES128EncryptedDataWithKey:(NSString *)key iv:(NSString * _Nullable)iv {
+- (NSData *)KKAES128EncryptedDataWithKey:(NSString *)key iv:(NSString * _Nullable)iv {
     return [self AES128Operation:kCCEncrypt key:key iv:iv];
 }
 
-- (NSData *)AES128DecryptedDataWithKey:(NSString *)key iv:(NSString * _Nullable)iv {
+- (NSData *)KKAES128DecryptedDataWithKey:(NSString *)key iv:(NSString * _Nullable)iv {
     return [self AES128Operation:kCCDecrypt key:key iv:iv];
 }
 
-- (NSData *)AES256EncryptedDataWithKey:(NSString *)key {
-    return [self AES256EncryptedDataWithKey:key iv:nil];
+- (NSData *)KKAES256EncryptedDataWithKey:(NSString *)key {
+    return [self KKAES256EncryptedDataWithKey:key iv:nil];
 }
 
-- (NSData *)AES256DecryptedDataWithKey:(NSString *)key {
-    return [self AES256DecryptedDataWithKey:key iv:nil];
+- (NSData *)KKAES256DecryptedDataWithKey:(NSString *)key {
+    return [self KKAES256DecryptedDataWithKey:key iv:nil];
 }
 
-- (NSData *)AES256EncryptedDataWithKey:(NSString *)key iv:(NSString * _Nullable)iv {
+- (NSData *)KKAES256EncryptedDataWithKey:(NSString *)key iv:(NSString * _Nullable)iv {
     return [self AES256Operation:kCCEncrypt key:key iv:iv];
 }
 
-- (NSData *)AES256DecryptedDataWithKey:(NSString *)key iv:(NSString * _Nullable)iv {
+- (NSData *)KKAES256DecryptedDataWithKey:(NSString *)key iv:(NSString * _Nullable)iv {
     return [self AES256Operation:kCCDecrypt key:key iv:iv];
 }
 
@@ -113,7 +113,7 @@
     return nil;
 }
 
-- (NSString *)hexadecimalString {
+- (NSString *)KKHexadecimalString {
     const unsigned char *dataBuffer = (const unsigned char *)[self bytes];
     
     if (!dataBuffer) {

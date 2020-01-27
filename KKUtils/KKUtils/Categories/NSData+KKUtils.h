@@ -12,17 +12,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSData (KKUtils)
 
-- (NSData *)AES128EncryptedDataWithKey:(NSString *)key;
-- (NSData *)AES128DecryptedDataWithKey:(NSString *)key;
-- (NSData *)AES128EncryptedDataWithKey:(NSString *)key iv:(NSString * _Nullable)iv;
-- (NSData *)AES128DecryptedDataWithKey:(NSString *)key iv:(NSString *_Nullable)iv;
+- (NSData *)KKAES128EncryptedDataWithKey:(NSString *)key;
+- (NSData *)KKAES128DecryptedDataWithKey:(NSString *)key;
+- (NSData *)KKAES128EncryptedDataWithKey:(NSString *)key iv:(NSString * _Nullable)iv;
+- (NSData *)KKAES128DecryptedDataWithKey:(NSString *)key iv:(NSString *_Nullable)iv;
 
-- (NSData *)AES256EncryptedDataWithKey:(NSString *)key;
-- (NSData *)AES256DecryptedDataWithKey:(NSString *)key;
-- (NSData *)AES256EncryptedDataWithKey:(NSString *)key iv:(NSString * _Nullable)iv;
-- (NSData *)AES256DecryptedDataWithKey:(NSString *)key iv:(NSString * _Nullable)iv;
+- (NSData *)KKAES256EncryptedDataWithKey:(NSString *)key;
+- (NSData *)KKAES256DecryptedDataWithKey:(NSString *)key;
+- (NSData *)KKAES256EncryptedDataWithKey:(NSString *)key iv:(NSString * _Nullable)iv;
+- (NSData *)KKAES256DecryptedDataWithKey:(NSString *)key iv:(NSString * _Nullable)iv;
 
-- (NSString *)hexadecimalString;
+- (NSString *)KKHexadecimalString;
 
 @end
 
