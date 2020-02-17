@@ -24,6 +24,7 @@ FOUNDATION_EXPORT const unsigned char KKUtilsVersionString[];
 
 // Classes
 #import "KKArc.h"
+#import "KKCircularBar.h"
 #import "KKNSLayoutConstraintExpandableByKeyboard.h"
 #import "KKPaginatedList.h"
 #import "KKUIButton.h"

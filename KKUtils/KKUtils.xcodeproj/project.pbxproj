@@ -74,6 +74,8 @@
 		2FC2A64C233B92A700FBF7D4 /* NSDate+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A64A233B92A700FBF7D4 /* NSDate+KKUtils.m */; };
 		9E96EF74235D8FCC005C5630 /* NSData+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E96EF72235D8FCC005C5630 /* NSData+KKUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E96EF75235D8FCC005C5630 /* NSData+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E96EF73235D8FCC005C5630 /* NSData+KKUtils.m */; };
+		9EA3113F23FA80D50038DEF2 /* KKCircularBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3113E23FA80D50038DEF2 /* KKCircularBar.m */; };
+		9EA3114023FA80D70038DEF2 /* KKCircularBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA3113D23FA80D50038DEF2 /* KKCircularBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EAC9FD223DAE043001222BD /* NSURL+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EAC9FD023DAE043001222BD /* NSURL+KKUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EAC9FD323DAE043001222BD /* NSURL+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAC9FD123DAE043001222BD /* NSURL+KKUtils.m */; };
 		9EAC9FDD23DAE2E5001222BD /* KKUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC2A5C82339F67600FBF7D4 /* KKUtils.framework */; };
@@ -81,7 +83,7 @@
 		9EAC9FE523DB1CFA001222BD /* NSURL+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAC9FD123DAE043001222BD /* NSURL+KKUtils.m */; };
 		9EAC9FE823DB27A5001222BD /* UIApplication+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EAC9FE623DB27A5001222BD /* UIApplication+KKUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EAC9FE923DB27A5001222BD /* UIApplication+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAC9FE723DB27A5001222BD /* UIApplication+KKUtils.m */; };
-		9EAC9FEC23DB2BFE001222BD /* KKUINavigationItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EAC9FEA23DB2BFE001222BD /* KKUINavigationItem.h */; };
+		9EAC9FEC23DB2BFE001222BD /* KKUINavigationItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EAC9FEA23DB2BFE001222BD /* KKUINavigationItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EAC9FED23DB2BFE001222BD /* KKUINavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAC9FEB23DB2BFE001222BD /* KKUINavigationItem.m */; };
 /* End PBXBuildFile section */
 
@@ -202,6 +204,8 @@
 		2FC2A64A233B92A700FBF7D4 /* NSDate+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+KKUtils.m"; sourceTree = "<group>"; };
 		9E96EF72235D8FCC005C5630 /* NSData+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+KKUtils.h"; sourceTree = "<group>"; };
 		9E96EF73235D8FCC005C5630 /* NSData+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+KKUtils.m"; sourceTree = "<group>"; };
+		9EA3113D23FA80D50038DEF2 /* KKCircularBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKCircularBar.h; sourceTree = "<group>"; };
+		9EA3113E23FA80D50038DEF2 /* KKCircularBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKCircularBar.m; sourceTree = "<group>"; };
 		9EAC9FD023DAE043001222BD /* NSURL+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+KKUtils.h"; sourceTree = "<group>"; };
 		9EAC9FD123DAE043001222BD /* NSURL+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+KKUtils.m"; sourceTree = "<group>"; };
 		9EAC9FD823DAE2E5001222BD /* KKUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KKUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -419,6 +423,8 @@
 				2FA8122B237D7C5D001E3601 /* KKAnimatedImageView.m */,
 				2FC2A621233A0C9900FBF7D4 /* KKArc.h */,
 				2FC2A622233A0C9900FBF7D4 /* KKArc.m */,
+				9EA3113D23FA80D50038DEF2 /* KKCircularBar.h */,
+				9EA3113E23FA80D50038DEF2 /* KKCircularBar.m */,
 				2FC2A62D233A113D00FBF7D4 /* KKNSLayoutConstraintExpandableByKeyboard.h */,
 				2FC2A62E233A113D00FBF7D4 /* KKNSLayoutConstraintExpandableByKeyboard.m */,
 				2FC2A61E233A0AF900FBF7D4 /* KKPaginatedList.h */,
@@ -498,6 +504,7 @@
 				9EAC9FD223DAE043001222BD /* NSURL+KKUtils.h in Headers */,
 				2FC2A64B233B92A700FBF7D4 /* NSDate+KKUtils.h in Headers */,
 				9EAC9FE823DB27A5001222BD /* UIApplication+KKUtils.h in Headers */,
+				9EA3114023FA80D70038DEF2 /* KKCircularBar.h in Headers */,
 				2F383F63239538EF008CBD72 /* KKTableViewCell.h in Headers */,
 				2FC2A637233A12DC00FBF7D4 /* KKUIButton.h in Headers */,
 				2FC2A5E22339FA8700FBF7D4 /* NSDictionary+KKUtils.h in Headers */,
@@ -669,6 +676,7 @@
 				2F383F64239538EF008CBD72 /* KKTableViewCell.m in Sources */,
 				2FC2A5E32339FA8700FBF7D4 /* NSDictionary+KKUtils.m in Sources */,
 				9E96EF75235D8FCC005C5630 /* NSData+KKUtils.m in Sources */,
+				9EA3113F23FA80D50038DEF2 /* KKCircularBar.m in Sources */,
 				2FC2A5DA2339F77D00FBF7D4 /* UIColor+KKUtils.m in Sources */,
 				2FC2A628233A102900FBF7D4 /* KKUIView.m in Sources */,
 				2FC2A5FF2339FFDB00FBF7D4 /* UIScreen+KKUtils.m in Sources */,
