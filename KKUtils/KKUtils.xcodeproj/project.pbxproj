@@ -81,7 +81,7 @@
 		9EAC9FE523DB1CFA001222BD /* NSURL+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAC9FD123DAE043001222BD /* NSURL+KKUtils.m */; };
 		9EAC9FE823DB27A5001222BD /* UIApplication+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EAC9FE623DB27A5001222BD /* UIApplication+KKUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EAC9FE923DB27A5001222BD /* UIApplication+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAC9FE723DB27A5001222BD /* UIApplication+KKUtils.m */; };
-		9EAC9FEC23DB2BFE001222BD /* KKUINavigationItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EAC9FEA23DB2BFE001222BD /* KKUINavigationItem.h */; };
+		9EAC9FEC23DB2BFE001222BD /* KKUINavigationItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EAC9FEA23DB2BFE001222BD /* KKUINavigationItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EAC9FED23DB2BFE001222BD /* KKUINavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAC9FEB23DB2BFE001222BD /* KKUINavigationItem.m */; };
 /* End PBXBuildFile section */
 
