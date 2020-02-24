@@ -80,7 +80,7 @@
         } else {
             //if container bottom space is 0
         }
-        self.constant = height;
+        self.constant = height - UIApplication.sharedApplication.keyWindow.safeAreaInsets.bottom;
     }
 
     [UIView animateWithDuration:animationDuration animations:^{

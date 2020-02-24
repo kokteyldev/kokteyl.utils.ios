@@ -34,7 +34,6 @@
 		2FA81229237D7B87001E3601 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA81218237D7B87001E3601 /* AFSecurityPolicy.m */; };
 		2FA81243237D8049001E3601 /* KKUtilsAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2FA81242237D8049001E3601 /* KKUtilsAssets.bundle */; };
 		9EA3113523FA6EA70038DEF2 /* CircularBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3113423FA6EA70038DEF2 /* CircularBarViewController.m */; };
-		9EA3113823FA71400038DEF2 /* KKCircularBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3113723FA71400038DEF2 /* KKCircularBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,8 +126,6 @@
 		2FA81242237D8049001E3601 /* KKUtilsAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KKUtilsAssets.bundle; sourceTree = "<group>"; };
 		9EA3113323FA6EA70038DEF2 /* CircularBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularBarViewController.h; sourceTree = "<group>"; };
 		9EA3113423FA6EA70038DEF2 /* CircularBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularBarViewController.m; sourceTree = "<group>"; };
-		9EA3113623FA71400038DEF2 /* KKCircularBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KKCircularBar.h; path = ../../KKUtils/KKUtils/Classes/KKCircularBar.h; sourceTree = "<group>"; };
-		9EA3113723FA71400038DEF2 /* KKCircularBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KKCircularBar.m; path = ../../KKUtils/KKUtils/Classes/KKCircularBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,8 +181,6 @@
 				2FA811DF237D79BC001E3601 /* LaunchScreen.storyboard */,
 				2FA811E2237D79BC001E3601 /* Info.plist */,
 				2FA811E3237D79BC001E3601 /* main.m */,
-				9EA3113623FA71400038DEF2 /* KKCircularBar.h */,
-				9EA3113723FA71400038DEF2 /* KKCircularBar.m */,
 			);
 			path = KKUtilsDemo;
 			sourceTree = "<group>";
@@ -398,7 +393,6 @@
 				2FA8121E237D7B87001E3601 /* UIImageView+AFNetworking.m in Sources */,
 				2FA81221237D7B87001E3601 /* UIWebView+AFNetworking.m in Sources */,
 				2FA81229237D7B87001E3601 /* AFSecurityPolicy.m in Sources */,
-				9EA3113823FA71400038DEF2 /* KKCircularBar.m in Sources */,
 				2FA811E4237D79BC001E3601 /* main.m in Sources */,
 				2FA81226237D7B87001E3601 /* AFURLSessionManager.m in Sources */,
 				2FA81228237D7B87001E3601 /* AFNetworkReachabilityManager.m in Sources */,
