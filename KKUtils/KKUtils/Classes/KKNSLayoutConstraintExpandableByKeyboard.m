@@ -51,8 +51,9 @@
     NSDictionary *info = [notification userInfo];
     NSTimeInterval animationDuration = [[info objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
 
+    self.constant = self->_initalConstant;
     [UIView animateWithDuration:animationDuration animations:^{
-        self.constant = self->_initalConstant;
+        [self.containerViewController.view layoutIfNeeded];
     }];
 }
 
