@@ -37,6 +37,9 @@
 - (void)addLayoutConstraintsToCenterViewInParentView:(UIView *)parentView;
 - (void)addWidthAndHeightConstraintsForSize:(CGSize)size
                                inParentView:(UIView *)parentView;
+- (void)addHeightConstraintWithValue:(CGFloat)heightValue;
+- (void)updateHeightContraintWithValue:(CGFloat)heightValue;
+
 + (UIView *)loadingOverlay;
 - (void)removeAllViews;
 + (UIView *)DarkOverlay;

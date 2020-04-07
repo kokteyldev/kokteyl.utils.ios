@@ -223,6 +223,25 @@
                                                             constant:size.height]];
 }
 
+- (void)addHeightConstraintWithValue:(CGFloat)heightValue {
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self
+                                                     attribute:NSLayoutAttributeHeight
+                                                     relatedBy:NSLayoutRelationEqual
+                                                        toItem:nil
+                                                     attribute: NSLayoutAttributeNotAnAttribute
+                                                    multiplier:1
+                                                      constant:heightValue]];
+}
+
+- (void)updateHeightContraintWithValue:(CGFloat)heightValue {
+    for (NSLayoutConstraint *cns in self.constraints) {
+        if (cns.firstAttribute == NSLayoutAttributeHeight) {
+            cns.constant = heightValue;
+            break;
+        }
+    }
+}
+
 + (UIView*)loadingOverlay {
     UIView* overlayView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     overlayView.backgroundColor = [UIColor colorWithHexString:@"#FFFFFF" andAlpha:.4];

@@ -48,6 +48,19 @@
     return [numberFormatter numberFromString:self];
 }
 
+- (NSString *)convertNeedleToRegexPattern {
+
+    NSMutableString *fixedRegexWord = [NSMutableString string];
+    for (NSUInteger i = 0; i < self.length; i++) {
+        NSString *letter = [self substringWithRange:NSMakeRange(i, 1)];
+        if ([letter isEqualToString:@"ı"] || [letter isEqualToString:@"i"]) {
+            letter = @"[ıiIİ]";
+        }
+        [fixedRegexWord appendString:letter];
+    }
+    return  [NSString stringWithFormat:@".*%@.*", fixedRegexWord];
+}
+
 #pragma mark - Validators
 
 - (BOOL)isValidPhoneNumber {

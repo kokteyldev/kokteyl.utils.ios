@@ -17,6 +17,8 @@
 - (NSString *)currencySymbol;
 - (NSNumber *)localizedNumber;
 
+- (NSString *)convertNeedleToRegexPattern;
+
 - (BOOL)isValidPhoneNumber;
 - (BOOL)isValidPhoneNumberForRegexPattern:(NSString *)regexPattern;
 - (BOOL)isValidPlateNumber;
@@ -25,6 +27,8 @@
 - (BOOL)isValidEmail;
 - (BOOL)isValidAccessToken;
 - (BOOL)isValidShortDate;
+
+
 
 @end
 

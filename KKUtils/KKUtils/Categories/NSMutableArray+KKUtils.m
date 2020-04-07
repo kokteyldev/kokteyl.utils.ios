@@ -16,4 +16,19 @@
     }
 }
 
+- (BOOL)swapItemAtIndex:(NSInteger)sourceIndex withItemAtIndex:(NSInteger)destinationIndex {
+
+    if (sourceIndex >= self.count || destinationIndex >= self.count || sourceIndex < 0 || destinationIndex < 0) {
+        return NO;
+    }
+
+    id sourceItem = [self objectAtIndex:sourceIndex];
+    id destinationItem = [self objectAtIndex:destinationIndex];
+
+    [self replaceObjectAtIndex:destinationIndex withObject:sourceItem];
+    [self replaceObjectAtIndex:sourceIndex withObject:destinationItem];
+
+    return YES;
+}
+
 @end

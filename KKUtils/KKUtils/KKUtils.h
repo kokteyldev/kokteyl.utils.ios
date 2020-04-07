@@ -23,21 +23,22 @@ FOUNDATION_EXPORT const unsigned char KKUtilsVersionString[];
 #import "KKIMappable.h"
 
 // Classes
+#import "KKAnimatedImageView.h"
 #import "KKArc.h"
 #import "KKCircularBar.h"
 #import "KKNSLayoutConstraintExpandableByKeyboard.h"
 #import "KKPaginatedList.h"
+#import "KKRefreshControl.h"
+#import "KKSlideableTVC.h"
+#import "KKTableViewCell.h"
 #import "KKUIButton.h"
 #import "KKUIImageView.h"
 #import "KKUILabel.h"
 #import "KKUINavigationItem.h"
+#import "KKUITabBarItem.h"
 #import "KKUITextField.h"
 #import "KKUITextView.h"
 #import "KKUIView.h"
-#import "KKAnimatedImageView.h"
-#import "KKTableViewCell.h"
-#import "KKSlideableTVC.h"
-#import "KKRefreshControl.h"
 
 // Categories
 #import "NSArray+KKUtils.h"

@@ -34,6 +34,8 @@
     self.iconImageRightPadding =
     self.iconImageTopPadding =
     CGFLOAT_MAX;
+
+    self.titleLabel.adjustsFontSizeToFitWidth = YES;
 }
 
 - (void)layoutSubviews {

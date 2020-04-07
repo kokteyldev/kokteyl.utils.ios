@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2F08E0BF239501AD000D6EBD /* KKSlideableTVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F08E0BD239501AD000D6EBD /* KKSlideableTVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F08E0C0239501AD000D6EBD /* KKSlideableTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F08E0BE239501AD000D6EBD /* KKSlideableTVC.m */; };
+		2F1CF4B4243C6E4A00CE6B15 /* KKUITabBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F1CF4B2243C6E4A00CE6B15 /* KKUITabBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F1CF4B5243C6E4A00CE6B15 /* KKUITabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1CF4B3243C6E4A00CE6B15 /* KKUITabBarItem.m */; };
 		2F383F63239538EF008CBD72 /* KKTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F383F61239538EF008CBD72 /* KKTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F383F64239538EF008CBD72 /* KKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F383F62239538EF008CBD72 /* KKTableViewCell.m */; };
 		2F383F6723953CD3008CBD72 /* KKRefreshControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F383F6523953CD3008CBD72 /* KKRefreshControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -136,6 +138,8 @@
 		2F134E5A234B33CF00259562 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
 		2F134E5B234B33CF00259562 /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFCompatibilityMacros.h; sourceTree = "<group>"; };
 		2F134E5C234B33CF00259562 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		2F1CF4B2243C6E4A00CE6B15 /* KKUITabBarItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKUITabBarItem.h; sourceTree = "<group>"; };
+		2F1CF4B3243C6E4A00CE6B15 /* KKUITabBarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKUITabBarItem.m; sourceTree = "<group>"; };
 		2F383F61239538EF008CBD72 /* KKTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKTableViewCell.h; sourceTree = "<group>"; };
 		2F383F62239538EF008CBD72 /* KKTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKTableViewCell.m; sourceTree = "<group>"; };
 		2F383F6523953CD3008CBD72 /* KKRefreshControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKRefreshControl.h; sourceTree = "<group>"; };
@@ -449,6 +453,8 @@
 				2FC2A642233A425F00FBF7D4 /* KKUITextView.m */,
 				2FC2A625233A102900FBF7D4 /* KKUIView.h */,
 				2FC2A626233A102900FBF7D4 /* KKUIView.m */,
+				2F1CF4B2243C6E4A00CE6B15 /* KKUITabBarItem.h */,
+				2F1CF4B3243C6E4A00CE6B15 /* KKUITabBarItem.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -507,6 +513,7 @@
 				9EA3114023FA80D70038DEF2 /* KKCircularBar.h in Headers */,
 				2F383F63239538EF008CBD72 /* KKTableViewCell.h in Headers */,
 				2FC2A637233A12DC00FBF7D4 /* KKUIButton.h in Headers */,
+				2F1CF4B4243C6E4A00CE6B15 /* KKUITabBarItem.h in Headers */,
 				2FC2A5E22339FA8700FBF7D4 /* NSDictionary+KKUtils.h in Headers */,
 				2FC2A62F233A113D00FBF7D4 /* KKNSLayoutConstraintExpandableByKeyboard.h in Headers */,
 				2FC2A5DE2339F86100FBF7D4 /* NSArray+KKUtils.h in Headers */,
@@ -674,6 +681,7 @@
 				2F383F6823953CD3008CBD72 /* KKRefreshControl.m in Sources */,
 				2FC2A5F72339FE4600FBF7D4 /* UIViewController+KKUtils.m in Sources */,
 				2F383F64239538EF008CBD72 /* KKTableViewCell.m in Sources */,
+				2F1CF4B5243C6E4A00CE6B15 /* KKUITabBarItem.m in Sources */,
 				2FC2A5E32339FA8700FBF7D4 /* NSDictionary+KKUtils.m in Sources */,
 				9E96EF75235D8FCC005C5630 /* NSData+KKUtils.m in Sources */,
 				9EA3113F23FA80D50038DEF2 /* KKCircularBar.m in Sources */,
