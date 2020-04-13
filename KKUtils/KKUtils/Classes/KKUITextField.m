@@ -42,19 +42,30 @@
     [self layoutIfNeeded];
 }
 
+- (void)setPlaceholderColor:(UIColor *)placeholderColor {
+    _placeholderColor = placeholderColor;
+    self.attributedPlaceholder =
+    [[NSAttributedString alloc] initWithString: self.placeholder
+                                    attributes:@{
+                                        NSForegroundColorAttributeName: placeholderColor,
+                                        NSFontAttributeName : self.font,
+                                        NSBaselineOffsetAttributeName : @.75
+                                    }];
+}
+
 #pragma mark - Protection
 
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
     if (_isProtected &&
         (action == @selector(paste:) ||
-        action == @selector(copy:) ||
-        action == @selector(selectAll:) ||
-        action == @selector(select:) ||
-        action == @selector(cut:) ||
-        action == @selector(delete:)
-        )
+         action == @selector(copy:) ||
+         action == @selector(selectAll:) ||
+         action == @selector(select:) ||
+         action == @selector(cut:) ||
+         action == @selector(delete:)
+         )
         ) {
-            return NO;
+        return NO;
     }
     return [super canPerformAction:action withSender:sender];
 }

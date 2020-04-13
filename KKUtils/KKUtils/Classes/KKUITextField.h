@@ -25,6 +25,10 @@
  @brief Set textfield as protected. User interaction is enabled but text cannot be interacted.
 */
 @property (nonatomic) IBInspectable BOOL isProtected;
+/**
+@brief Set color of  placeholder text.
+*/
+@property (nonatomic) IBInspectable UIColor *placeholderColor;
 
 @end
 
