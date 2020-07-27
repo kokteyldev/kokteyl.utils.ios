@@ -11,6 +11,14 @@
 
 @implementation NSString (KKUtils)
 
++ (BOOL)isNullOrEmpty:(NSString *)string {
+    return !string || [string isEqualToString:@""];
+}
+
++ (BOOL)isNullOrEmpty:(NSString *)string orShorterThan:(NSInteger)minLength {
+    return [self isNullOrEmpty:string] || [string trimSpaces].length < minLength;
+}
+
 - (NSString *)trimSpaces {
     return [self stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }

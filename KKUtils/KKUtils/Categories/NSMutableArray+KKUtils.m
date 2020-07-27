@@ -31,4 +31,18 @@
     return YES;
 }
 
+- (BOOL)removeObjectAtIndex:(NSInteger)sourceIndex andInsertAtIndex:(NSInteger)destinationIndex {
+
+    if (sourceIndex >= self.count || destinationIndex >= self.count || sourceIndex < 0 || destinationIndex < 0) {
+        return NO;
+    }
+
+    id sourceItem = [self objectAtIndex:sourceIndex];
+    [self removeObjectAtIndex:sourceIndex];
+    [self insertObject:sourceItem atIndex:destinationIndex];
+
+    return YES;
+
+}
+
 @end

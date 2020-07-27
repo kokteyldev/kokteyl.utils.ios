@@ -10,6 +10,9 @@
 
 @interface NSString (KKUtils)
 
++ (BOOL)isNullOrEmpty:(NSString *)string;
++ (BOOL)isNullOrEmpty:(NSString *)string orShorterThan:(NSInteger)minLength;
+
 - (NSString *)trimSpaces;
 - (NSDate *)shortDate;
 
@@ -27,8 +30,6 @@
 - (BOOL)isValidEmail;
 - (BOOL)isValidAccessToken;
 - (BOOL)isValidShortDate;
-
-
 
 @end
 

@@ -11,6 +11,7 @@
 @interface NSMutableArray (KKUtils)
 - (void)addObjectIfNotNil:(id)anObject;
 - (BOOL)swapItemAtIndex:(NSInteger)sourceIndex withItemAtIndex:(NSInteger)destinationIndex;
+- (BOOL)removeObjectAtIndex:(NSInteger)sourceIndex andInsertAtIndex:(NSInteger)destinationIndex;
 @end
 
 
