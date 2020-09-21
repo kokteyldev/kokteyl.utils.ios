@@ -13,6 +13,14 @@ CGFloat const kKKLoadMoreCellHeight = 50;
 
 @implementation UITableView (KKUtils)
 
+- (void)registerHeaderFooterNibs:(NSArray *)headerFooterNibNames
+                        cellNibs:(NSArray *)cellNibNames {
+    for (NSString* headerFooterNibName in headerFooterNibNames) {
+        [self registerHeaderFooterNib:headerFooterNibName];
+    }
+    [self registerNibs:cellNibNames];
+}
+
 - (void)registerNibs:(NSArray*)nibNames {
     for (NSString* nibName in nibNames) {
         UINib* cellNib = [UINib nibWithNibName:nibName bundle:nil];
@@ -24,6 +32,10 @@ CGFloat const kKKLoadMoreCellHeight = 50;
 
 - (void)registerDefaultNibs {
     [self registerNibs:@[kKKLoadMoreCellIdentifier]];
+}
+
+- (void)registerHeaderFooterNib:(NSString *)nibName {
+    [self registerNib:[UINib nibWithNibName:nibName bundle:nil] forHeaderFooterViewReuseIdentifier:nibName];
 }
 
 - (void)scrollToTop {

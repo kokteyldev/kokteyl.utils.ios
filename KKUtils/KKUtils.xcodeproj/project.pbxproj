@@ -21,6 +21,8 @@
 		2FA8122D237D7C5D001E3601 /* KKAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA8122B237D7C5D001E3601 /* KKAnimatedImageView.m */; };
 		2FA81230237D7D2F001E3601 /* KKAnimatedImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA8122F237D7D2F001E3601 /* KKAnimatedImageView.xib */; };
 		2FA8123C237D7F13001E3601 /* KKAnimatedImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA8122F237D7D2F001E3601 /* KKAnimatedImageView.xib */; };
+		2FB563F92518F0C500375D76 /* UIScrollView+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FB563F72518F0C500375D76 /* UIScrollView+KKUtils.h */; };
+		2FB563FA2518F0C500375D76 /* UIScrollView+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB563F82518F0C500375D76 /* UIScrollView+KKUtils.m */; };
 		2FC2A5CD2339F67600FBF7D4 /* KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A5CB2339F67600FBF7D4 /* KKUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FC2A5DA2339F77D00FBF7D4 /* UIColor+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2A5D82339F77D00FBF7D4 /* UIColor+KKUtils.m */; };
 		2FC2A5DB2339F77D00FBF7D4 /* UIColor+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC2A5D92339F77D00FBF7D4 /* UIColor+KKUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -151,6 +153,8 @@
 		2FA8122F237D7D2F001E3601 /* KKAnimatedImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKAnimatedImageView.xib; sourceTree = "<group>"; };
 		2FA81236237D7F0C001E3601 /* KKUtilsAssets.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KKUtilsAssets.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA81238237D7F0C001E3601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FB563F72518F0C500375D76 /* UIScrollView+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+KKUtils.h"; sourceTree = "<group>"; };
+		2FB563F82518F0C500375D76 /* UIScrollView+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+KKUtils.m"; sourceTree = "<group>"; };
 		2FC2A5C82339F67600FBF7D4 /* KKUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KKUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC2A5CB2339F67600FBF7D4 /* KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKUtils.h; sourceTree = "<group>"; };
 		2FC2A5CC2339F67600FBF7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -400,6 +404,8 @@
 				2FC2A611233A064200FBF7D4 /* UIImageView+KKUtils.m */,
 				2FC2A5FC2339FFDB00FBF7D4 /* UIScreen+KKUtils.h */,
 				2FC2A5FD2339FFDB00FBF7D4 /* UIScreen+KKUtils.m */,
+				2FB563F72518F0C500375D76 /* UIScrollView+KKUtils.h */,
+				2FB563F82518F0C500375D76 /* UIScrollView+KKUtils.m */,
 				2FC2A645233A628800FBF7D4 /* UIStoryboard+KKUtils.h */,
 				2FC2A646233A628800FBF7D4 /* UIStoryboard+KKUtils.m */,
 				2FC2A5EC2339FCCC00FBF7D4 /* UITableView+KKUtils.h */,
@@ -497,6 +503,7 @@
 				9EAC9FEC23DB2BFE001222BD /* KKUINavigationItem.h in Headers */,
 				2FA8122C237D7C5D001E3601 /* KKAnimatedImageView.h in Headers */,
 				2FC2A5F22339FDAC00FBF7D4 /* UIView+KKUtils.h in Headers */,
+				2FB563F92518F0C500375D76 /* UIScrollView+KKUtils.h in Headers */,
 				2FC2A612233A064200FBF7D4 /* UIImageView+KKUtils.h in Headers */,
 				2F08E0BF239501AD000D6EBD /* KKSlideableTVC.h in Headers */,
 				2FC2A623233A0C9900FBF7D4 /* KKArc.h in Headers */,
@@ -587,7 +594,7 @@
 		2FC2A5BF2339F67600FBF7D4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Tolga Seremet";
 				TargetAttributes = {
 					2FA81235237D7F0C001E3601 = {
@@ -668,6 +675,7 @@
 				2FC2A603233A011C00FBF7D4 /* NSObject+KKUtils.m in Sources */,
 				2FC2A63C233A40D100FBF7D4 /* KKUITextField.m in Sources */,
 				2FC2A617233A09B000FBF7D4 /* NSString+KKUtils.m in Sources */,
+				2FB563FA2518F0C500375D76 /* UIScrollView+KKUtils.m in Sources */,
 				2F08E0C0239501AD000D6EBD /* KKSlideableTVC.m in Sources */,
 				9EAC9FE923DB27A5001222BD /* UIApplication+KKUtils.m in Sources */,
 				2FC2A644233A425F00FBF7D4 /* KKUITextView.m in Sources */,
@@ -727,7 +735,7 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = KKUtilsAssets/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kokteyl.KKUtilsAssets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -747,7 +755,7 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = KKUtilsAssets/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kokteyl.KKUtilsAssets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -784,6 +792,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -809,7 +818,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -845,6 +854,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -864,7 +874,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -886,7 +896,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = KKUtils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -913,7 +923,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = KKUtils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

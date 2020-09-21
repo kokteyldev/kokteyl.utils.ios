@@ -13,6 +13,8 @@ extern CGFloat const kKKLoadMoreCellHeight;
 
 @interface UITableView (KKUtils)
 
+- (void)registerHeaderFooterNibs:(NSArray *)headerFooterNibNames
+                        cellNibs:(NSArray *)cellNibNames;
 - (void)registerNibs:(NSArray *)nibNames;
 - (void)registerDefaultNibs;
 - (void)scrollToTop;
