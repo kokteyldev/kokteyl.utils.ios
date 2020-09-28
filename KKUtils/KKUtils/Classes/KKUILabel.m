@@ -34,7 +34,7 @@
 - (void)commonInit {
     self.numberOfLines = 0;
     if (self.clearTextOnInit) {
-      self.text = @" ";
+        self.text = @" ";
     }
 }
 
@@ -68,6 +68,22 @@
     _localizedKey = localizedKey;
     self.text = [getBundle localizedStringForKey:(_localizedKey) value:@"" table:nil];
     [self layoutIfNeeded];
+}
+
+- (void)setLocalizedAttributedKey:(NSString *)localizedAttributedKey {
+    _localizedAttributedKey = localizedAttributedKey;
+
+    NSError *err = nil;
+    self.attributedText =
+    [[NSAttributedString alloc]
+     initWithData: [NSLocalizedString(localizedAttributedKey, nil) dataUsingEncoding:NSUTF8StringEncoding]
+     options: @{
+         NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType
+     }
+     documentAttributes: nil
+     error: &err];
+    if(err)
+        NSLog(@"Unable to parse label text: %@", err);
 }
 
 - (void)setRTFFileName:(NSString *)rTFFileName{

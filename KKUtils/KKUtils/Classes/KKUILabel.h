@@ -22,6 +22,10 @@
  */
 @property (nonatomic) IBInspectable NSString* localizedKey;
 /**
+ @brief Set localized attributed key of label.
+ */
+@property (nonatomic) IBInspectable NSString* localizedAttributedKey;
+/**
  @brief Set filename for RTF text.
  */
 @property (nonatomic) IBInspectable NSString* rTFFileName;
