@@ -22,6 +22,14 @@
     return [self textRectForBounds:bounds];
 }
 
+- (CGRect)caretRectForPosition:(UITextPosition *)position {
+    if (_isHidesCursor) {
+        return CGRectZero;
+    } else {
+        return [super caretRectForPosition:position];
+    }
+}
+
 #pragma mark - Setters
 
 - (void)setCornerRadius:(CGFloat)cornerRadius {

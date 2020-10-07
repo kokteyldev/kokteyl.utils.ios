@@ -29,6 +29,10 @@
 @brief Set color of  placeholder text.
 */
 @property (nonatomic) IBInspectable UIColor *placeholderColor;
+/**
+@brief Hide cursor.
+*/
+@property (nonatomic) IBInspectable BOOL isHidesCursor;
 
 @end
 

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (KKUtils)
-
+@property (nonatomic, assign) BOOL visible;
 - (void)applySketchShadow:(UIColor *)color
                     alpha:(CGFloat)alpha
                         x:(CGFloat)x

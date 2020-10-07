@@ -56,6 +56,7 @@ FOUNDATION_EXPORT const unsigned char KKUtilsVersionString[];
 #import "UIColor+KKUtils.h"
 #import "UIImage+KKUtils.h"
 #import "UIImageView+KKUtils.h"
+#import "UILabel+KKUtils.h"
 #import "UIScreen+KKUtils.h"
 #import "UIScrollView+KKUtils.h"
 #import "UIStoryboard+KKUtils.h"

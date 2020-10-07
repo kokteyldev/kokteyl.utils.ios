@@ -10,6 +10,7 @@
 #import "UIColor+KKUtils.h"
 
 @implementation UIView (KKUtils)
+@dynamic visible;
 
 - (void)applySketchShadow:(UIColor *)color
                     alpha:(CGFloat)alpha
@@ -333,6 +334,10 @@
         }
     }
     return nil;
+}
+
+- (void)setVisible:(BOOL)visible {
+    self.hidden = !visible;
 }
 
 - (void)expandFrameBy:(CGFloat)value {
