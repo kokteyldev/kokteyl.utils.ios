@@ -336,6 +336,7 @@
     return nil;
 }
 
+// use in <KKIMappable>
 - (void)setVisible:(BOOL)visible {
     self.hidden = !visible;
 }
