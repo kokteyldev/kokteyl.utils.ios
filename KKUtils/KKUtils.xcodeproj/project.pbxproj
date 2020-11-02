@@ -17,6 +17,8 @@
 		2F383F6823953CD3008CBD72 /* KKRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F383F6623953CD3008CBD72 /* KKRefreshControl.m */; };
 		2F4D587523740F470066D4D6 /* NSMutableArray+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F4D587323740F470066D4D6 /* NSMutableArray+KKUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F4D587623740F470066D4D6 /* NSMutableArray+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D587423740F470066D4D6 /* NSMutableArray+KKUtils.m */; };
+		2F615066254FE64D00ED2BA7 /* NSMutableString+KKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F615064254FE64D00ED2BA7 /* NSMutableString+KKUtils.h */; };
+		2F615067254FE64D00ED2BA7 /* NSMutableString+KKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F615065254FE64D00ED2BA7 /* NSMutableString+KKUtils.m */; };
 		2FA8122C237D7C5D001E3601 /* KKAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA8122A237D7C5D001E3601 /* KKAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FA8122D237D7C5D001E3601 /* KKAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA8122B237D7C5D001E3601 /* KKAnimatedImageView.m */; };
 		2FA81230237D7D2F001E3601 /* KKAnimatedImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA8122F237D7D2F001E3601 /* KKAnimatedImageView.xib */; };
@@ -150,6 +152,8 @@
 		2F383F6623953CD3008CBD72 /* KKRefreshControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKRefreshControl.m; sourceTree = "<group>"; };
 		2F4D587323740F470066D4D6 /* NSMutableArray+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+KKUtils.h"; sourceTree = "<group>"; };
 		2F4D587423740F470066D4D6 /* NSMutableArray+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+KKUtils.m"; sourceTree = "<group>"; };
+		2F615064254FE64D00ED2BA7 /* NSMutableString+KKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+KKUtils.h"; sourceTree = "<group>"; };
+		2F615065254FE64D00ED2BA7 /* NSMutableString+KKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+KKUtils.m"; sourceTree = "<group>"; };
 		2FA8122A237D7C5D001E3601 /* KKAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKAnimatedImageView.h; sourceTree = "<group>"; };
 		2FA8122B237D7C5D001E3601 /* KKAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKAnimatedImageView.m; sourceTree = "<group>"; };
 		2FA8122F237D7D2F001E3601 /* KKAnimatedImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKAnimatedImageView.xib; sourceTree = "<group>"; };
@@ -392,6 +396,8 @@
 				2FC2A601233A011C00FBF7D4 /* NSObject+KKUtils.m */,
 				2FC2A614233A09B000FBF7D4 /* NSString+KKUtils.h */,
 				2FC2A615233A09B000FBF7D4 /* NSString+KKUtils.m */,
+				2F615064254FE64D00ED2BA7 /* NSMutableString+KKUtils.h */,
+				2F615065254FE64D00ED2BA7 /* NSMutableString+KKUtils.m */,
 				9EAC9FD023DAE043001222BD /* NSURL+KKUtils.h */,
 				9EAC9FD123DAE043001222BD /* NSURL+KKUtils.m */,
 				2FC2A60D233A044A00FBF7D4 /* NSURLConnection+KKUtils.h */,
@@ -502,6 +508,7 @@
 				2FC2A5EE2339FCCC00FBF7D4 /* UITableView+KKUtils.h in Headers */,
 				2FE67515252E205000543A80 /* UILabel+KKUtils.h in Headers */,
 				2FC2A616233A09B000FBF7D4 /* NSString+KKUtils.h in Headers */,
+				2F615066254FE64D00ED2BA7 /* NSMutableString+KKUtils.h in Headers */,
 				2FC2A602233A011C00FBF7D4 /* NSObject+KKUtils.h in Headers */,
 				2FC2A5FE2339FFDB00FBF7D4 /* UIScreen+KKUtils.h in Headers */,
 				2FC2A607233A036500FBF7D4 /* KKIMappable.h in Headers */,
@@ -686,6 +693,7 @@
 				2FE67516252E205000543A80 /* UILabel+KKUtils.m in Sources */,
 				2F08E0C0239501AD000D6EBD /* KKSlideableTVC.m in Sources */,
 				9EAC9FE923DB27A5001222BD /* UIApplication+KKUtils.m in Sources */,
+				2F615067254FE64D00ED2BA7 /* NSMutableString+KKUtils.m in Sources */,
 				2FC2A644233A425F00FBF7D4 /* KKUITextView.m in Sources */,
 				9EAC9FED23DB2BFE001222BD /* KKUINavigationItem.m in Sources */,
 				2FC2A5EB2339FBCF00FBF7D4 /* UICollectionView+KKUtils.m in Sources */,

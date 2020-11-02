@@ -18,8 +18,10 @@
 + (instancetype)paginatedListWithPageSize:(NSInteger)pageSize;
 + (instancetype)paginatedListWithItems:(NSArray *)items pageSize:(NSInteger)pageSize;
 - (NSArray *)addItems:(NSArray *)items;
+- (NSArray *)addUniqueItems:(NSArray *)items;
 - (NSArray *)addItems:(NSArray *)items withItemCount:(NSInteger)itemsCount;
 - (NSArray *)addExtraItems:(NSArray *)items;
+- (NSArray *)replaceObjectAtIndex:(NSUInteger)idx withObject:(NSObject *)object;
 - (void)removeItemAtIndexPath:(NSIndexPath*)indexPath;
 - (void)removeItem:(id)item;
 - (void)resetItems;
