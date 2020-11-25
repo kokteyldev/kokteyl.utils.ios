@@ -11,6 +11,10 @@
 		2F383F5823950702008CBD72 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F383F5623950702008CBD72 /* TableViewCell.xib */; };
 		2F383F5E23950F17008CBD72 /* KKUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA811F0237D7A53001E3601 /* KKUtils.framework */; };
 		2F383F5F23950F17008CBD72 /* KKUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA811F0237D7A53001E3601 /* KKUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F9561AE256E43F5009FD28B /* CircularBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9561A9256E43F5009FD28B /* CircularBarViewController.m */; };
+		2F9561AF256E43F5009FD28B /* EmptyCellRendererViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9561AC256E43F5009FD28B /* EmptyCellRendererViewController.m */; };
+		2F9561B6256E47D1009FD28B /* EmptyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9561B4256E47D1009FD28B /* EmptyTableViewCell.m */; };
+		2F9561B7256E47D1009FD28B /* EmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9561B5256E47D1009FD28B /* EmptyTableViewCell.xib */; };
 		2FA070A724CEBB8C00A5481D /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA0708624CEBB8C00A5481D /* UIProgressView+AFNetworking.m */; };
 		2FA070A824CEBB8C00A5481D /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA0708824CEBB8C00A5481D /* UIRefreshControl+AFNetworking.m */; };
 		2FA070A924CEBB8C00A5481D /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA0708B24CEBB8C00A5481D /* AFNetworkActivityIndicatorManager.m */; };
@@ -33,7 +37,6 @@
 		2FA811E1237D79BC001E3601 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA811DF237D79BC001E3601 /* LaunchScreen.storyboard */; };
 		2FA811E4237D79BC001E3601 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA811E3237D79BC001E3601 /* main.m */; };
 		2FA81243237D8049001E3601 /* KKUtilsAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2FA81242237D8049001E3601 /* KKUtilsAssets.bundle */; };
-		9EA3113523FA6EA70038DEF2 /* CircularBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3113423FA6EA70038DEF2 /* CircularBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,13 @@
 		2F383F5423950702008CBD72 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		2F383F5523950702008CBD72 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		2F383F5623950702008CBD72 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		2F9561A9256E43F5009FD28B /* CircularBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularBarViewController.m; sourceTree = "<group>"; };
+		2F9561AA256E43F5009FD28B /* CircularBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularBarViewController.h; sourceTree = "<group>"; };
+		2F9561AC256E43F5009FD28B /* EmptyCellRendererViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyCellRendererViewController.m; sourceTree = "<group>"; };
+		2F9561AD256E43F5009FD28B /* EmptyCellRendererViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyCellRendererViewController.h; sourceTree = "<group>"; };
+		2F9561B3256E47D1009FD28B /* EmptyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmptyTableViewCell.h; sourceTree = "<group>"; };
+		2F9561B4256E47D1009FD28B /* EmptyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmptyTableViewCell.m; sourceTree = "<group>"; };
+		2F9561B5256E47D1009FD28B /* EmptyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyTableViewCell.xib; sourceTree = "<group>"; };
 		2FA0708524CEBB8C00A5481D /* WKWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		2FA0708624CEBB8C00A5481D /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
 		2FA0708724CEBB8C00A5481D /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
@@ -123,8 +133,6 @@
 		2FA811E3237D79BC001E3601 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2FA811EB237D7A53001E3601 /* KKUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KKUtils.xcodeproj; path = ../../KKUtils/KKUtils.xcodeproj; sourceTree = "<group>"; };
 		2FA81242237D8049001E3601 /* KKUtilsAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KKUtilsAssets.bundle; sourceTree = "<group>"; };
-		9EA3113323FA6EA70038DEF2 /* CircularBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularBarViewController.h; sourceTree = "<group>"; };
-		9EA3113423FA6EA70038DEF2 /* CircularBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +152,36 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F9561A7256E43F5009FD28B /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				2F9561A8256E43F5009FD28B /* UI */,
+				2F9561AB256E43F5009FD28B /* EmptyCellRenderer */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		2F9561A8256E43F5009FD28B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2F9561A9256E43F5009FD28B /* CircularBarViewController.m */,
+				2F9561AA256E43F5009FD28B /* CircularBarViewController.h */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2F9561AB256E43F5009FD28B /* EmptyCellRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				2F9561AD256E43F5009FD28B /* EmptyCellRendererViewController.h */,
+				2F9561AC256E43F5009FD28B /* EmptyCellRendererViewController.m */,
+				2F9561B3256E47D1009FD28B /* EmptyTableViewCell.h */,
+				2F9561B4256E47D1009FD28B /* EmptyTableViewCell.m */,
+				2F9561B5256E47D1009FD28B /* EmptyTableViewCell.xib */,
+			);
+			path = EmptyCellRenderer;
 			sourceTree = "<group>";
 		};
 		2FA0708424CEBB8C00A5481D /* UIKit+AFNetworking */ = {
@@ -214,11 +252,11 @@
 		2FA811D0237D79BA001E3601 /* KKUtilsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2F9561A7256E43F5009FD28B /* Examples */,
 				2FA811D1237D79BA001E3601 /* AppDelegate.h */,
 				2FA811D2237D79BA001E3601 /* AppDelegate.m */,
 				2FA811D7237D79BA001E3601 /* ViewController.h */,
 				2FA811D8237D79BA001E3601 /* ViewController.m */,
-				9EA3113223FA6E6E0038DEF2 /* UI */,
 				2F383F5423950702008CBD72 /* TableViewCell.h */,
 				2F383F5523950702008CBD72 /* TableViewCell.m */,
 				2F383F5623950702008CBD72 /* TableViewCell.xib */,
@@ -267,15 +305,6 @@
 				2FA0708424CEBB8C00A5481D /* UIKit+AFNetworking */,
 			);
 			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		9EA3113223FA6E6E0038DEF2 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				9EA3113323FA6EA70038DEF2 /* CircularBarViewController.h */,
-				9EA3113423FA6EA70038DEF2 /* CircularBarViewController.m */,
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +398,7 @@
 				2FA811E1237D79BC001E3601 /* LaunchScreen.storyboard in Resources */,
 				2F383F5823950702008CBD72 /* TableViewCell.xib in Resources */,
 				2FA811DE237D79BC001E3601 /* Assets.xcassets in Resources */,
+				2F9561B7256E47D1009FD28B /* EmptyTableViewCell.xib in Resources */,
 				2FA81243237D8049001E3601 /* KKUtilsAssets.bundle in Resources */,
 				2FA811DC237D79BA001E3601 /* Main.storyboard in Resources */,
 			);
@@ -388,15 +418,17 @@
 				2FA070A824CEBB8C00A5481D /* UIRefreshControl+AFNetworking.m in Sources */,
 				2FA070B424CEBB8C00A5481D /* AFNetworkReachabilityManager.m in Sources */,
 				2FA070B024CEBB8C00A5481D /* AFURLResponseSerialization.m in Sources */,
+				2F9561AE256E43F5009FD28B /* CircularBarViewController.m in Sources */,
 				2FA811D3237D79BA001E3601 /* AppDelegate.m in Sources */,
+				2F9561AF256E43F5009FD28B /* EmptyCellRendererViewController.m in Sources */,
 				2FA070AC24CEBB8C00A5481D /* UIButton+AFNetworking.m in Sources */,
 				2FA070B124CEBB8C00A5481D /* AFHTTPSessionManager.m in Sources */,
 				2FA070B324CEBB8C00A5481D /* AFURLRequestSerialization.m in Sources */,
 				2FA070AD24CEBB8C00A5481D /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				9EA3113523FA6EA70038DEF2 /* CircularBarViewController.m in Sources */,
 				2FA070AE24CEBB8C00A5481D /* AFAutoPurgingImageCache.m in Sources */,
 				2FA070A924CEBB8C00A5481D /* AFNetworkActivityIndicatorManager.m in Sources */,
 				2FA811E4237D79BC001E3601 /* main.m in Sources */,
+				2F9561B6256E47D1009FD28B /* EmptyTableViewCell.m in Sources */,
 				2FA070B524CEBB8C00A5481D /* AFSecurityPolicy.m in Sources */,
 				2FA070AF24CEBB8C00A5481D /* AFImageDownloader.m in Sources */,
 				2FA070A724CEBB8C00A5481D /* UIProgressView+AFNetworking.m in Sources */,

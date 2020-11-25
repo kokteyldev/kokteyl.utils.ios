@@ -20,7 +20,7 @@ FOUNDATION_EXPORT const unsigned char KKUtilsVersionString[];
 #import "KKMacros.h"
 
 // Protocols
-#import "KKIMappable.h"
+#import "KKProtocols.h"
 
 // Classes
 #import "KKAnimatedImageView.h"
@@ -39,6 +39,7 @@ FOUNDATION_EXPORT const unsigned char KKUtilsVersionString[];
 #import "KKUITextField.h"
 #import "KKUITextView.h"
 #import "KKUIView.h"
+#import "KKEmptyTableRenderer.h"
 
 // Categories
 #import "NSArray+KKUtils.h"

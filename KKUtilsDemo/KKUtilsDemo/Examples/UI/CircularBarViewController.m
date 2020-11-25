@@ -22,7 +22,7 @@
     
     _circularBar = [KKCircularBar barWithFrame:CGRectMake(0, 100, 50.0, 50.0)
                                          color:[UIColor redColor]
-                                      duration:30
+                                      duration:5
                                           font:[UIFont systemFontOfSize:16.0]];
     _circularBar.delegate = self;
     [self.view addSubview:_circularBar];

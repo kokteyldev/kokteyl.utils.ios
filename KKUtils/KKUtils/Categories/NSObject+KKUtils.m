@@ -7,7 +7,7 @@
 //
 
 #import "NSObject+KKUtils.h"
-#import "KKIMappable.h"
+#import "KKProtocols.h"
 #import "AFHTTPSessionManager.h"
 
 @implementation NSObject (KKUtils)
