@@ -14,7 +14,10 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    self.isCircle = _isCircle;
+    // force update corner radius
+    if (self.isCircle) {
+        [self setIsCircle:YES];
+    }
 }
 
 - (void)setCornerRadius:(CGFloat)cornerRadius {

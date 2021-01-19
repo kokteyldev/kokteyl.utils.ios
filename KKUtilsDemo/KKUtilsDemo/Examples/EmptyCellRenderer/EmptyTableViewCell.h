@@ -9,4 +9,4 @@
 #import <UIKit/UIKit.h>
 #import <KKUtils/KKUtils.h>
 
-@interface EmptyTableViewCell : UITableViewCell <KKIIdentifiable, KKEmptyTableRendererCellDelegate> @end
+@interface EmptyTableViewCell : UITableViewCell <KKEmptyTableRendererCellDelegate> @end

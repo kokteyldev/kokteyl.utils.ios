@@ -15,22 +15,14 @@
 @implementation EmptyCellRendererViewController {
 
     IBOutlet UITableView *TBMain;
-    NSArray<NSString *> *_data;
     KKEmptyTableRenderer *_emptyTableRenderer;
-}
-
-#pragma mark - View lifecycle
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    _data = @[@"Ayse", @"Fatma", @"Ahmet", @"Mehmet"];
 }
 
 #pragma mark - IBActions
 
 - (IBAction)switchToEmptyData:(id)sender {
     _emptyTableRenderer = [KKEmptyTableRenderer emptyTableRendererWithEmptyCellClass:[EmptyTableViewCell class]
-                                                                       emptyCellData:@"here is your empty state text"
+                                                                       emptyCellData:@{@"emptyText": @"here is your empty state text"}
                                                                            tableView:TBMain
                                                                             delegate:self];
     [_emptyTableRenderer render];
@@ -43,17 +35,13 @@
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    cell.textLabel.text = [_data objectAtIndex:indexPath.row];
+    cell.textLabel.text = [[self data] objectAtIndex:indexPath.row];
 }
 
 #pragma mark - <UITableViewDataSource>
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _data.count;
+    return [self data].count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -64,6 +52,17 @@
 
 - (void)emptyTableRendererDidRequestNewItem {
     NSLog(@"Empty cell renderer asks for new item");
+}
+
+#pragma mark - Data
+
+- (NSArray *)data {
+    static NSArray *data = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        data = @[@"Ayse", @"Fatma", @"Zeynep", @"Ahmet", @"Mehmet", @"Ali"];
+    });
+    return data;
 }
 
 @end

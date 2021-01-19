@@ -9,12 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@class KKEmptyTableRenderer;
 @protocol KKEmptyTableRendererDelegate <NSObject>
+@optional
 - (void)emptyTableRendererDidRequestNewItem;
 @end
 
-@protocol KKEmptyTableRendererCellDelegate <NSObject>
+@protocol KKIIdentifiable;
+@protocol KKEmptyTableRendererCellDelegate <NSObject, KKIIdentifiable>
 @optional
 - (void)setDelegate:(id<KKEmptyTableRendererDelegate>)delegate;
 - (void)setData:(id)data;

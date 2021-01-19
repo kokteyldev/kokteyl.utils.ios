@@ -8,7 +8,6 @@
 
 #import "EmptyTableViewCell.h"
 
-
 @implementation EmptyTableViewCell {
     IBOutlet UILabel *LBLInfo;
     __weak id<KKEmptyTableRendererDelegate> _delegate;
@@ -29,7 +28,8 @@
 }
 
 - (void)setData:(id)data {
-    LBLInfo.text = data;
+
+    LBLInfo.text = [((NSDictionary *)data) objectForKey:@"emptyText"];
 }
 
 + (CGFloat)height {
