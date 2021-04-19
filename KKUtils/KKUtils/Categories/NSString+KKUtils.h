@@ -18,7 +18,7 @@
 
 - (UIImage *)qrCodeImage;
 - (NSString *)currencySymbol;
-- (NSNumber *)localizedNumber;
+- (NSNumber *)localizedNumberForLocale:(NSString *)locale;
 
 - (NSString *)convertNeedleToRegexPattern;
 

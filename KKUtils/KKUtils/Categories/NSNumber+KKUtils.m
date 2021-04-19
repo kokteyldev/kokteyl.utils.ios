@@ -7,6 +7,7 @@
 //
 
 #import "NSNumber+KKUtils.h"
+#import "NSString+KKUtils.h"
 
 @implementation NSNumber (KKUtils)
 
@@ -108,22 +109,19 @@
     }
 }
 
-- (NSString *)currencyStringWithCountryCode:(NSString *)code {
+- (NSString *)currencyStringForCountryCode:(NSString *)code isCurrencyCodeVisible:(BOOL)currencyCodeVisible {
+
     NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
     numberFormatter.locale = [NSLocale localeWithLocaleIdentifier:code];
-    numberFormatter.usesGroupingSeparator = YES;
+    if (!currencyCodeVisible) {
+        numberFormatter.currencySymbol = @"";
+    }
     numberFormatter.numberStyle = NSNumberFormatterCurrencyStyle;
+    numberFormatter.usesGroupingSeparator = YES;
+    numberFormatter.currencyGroupingSeparator = @",";
+    numberFormatter.currencyDecimalSeparator = @".";
 
-    return [numberFormatter stringFromNumber:self];
-}
-
-- (NSString *)localizedCurrencyString {
-    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc]init];
-    numberFormatter.locale = [NSLocale currentLocale];
-    numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
-    numberFormatter.usesGroupingSeparator = NO;
-
-    return [numberFormatter stringFromNumber:self];
+    return [[numberFormatter stringFromNumber:self] trimSpaces];
 }
 
 @end

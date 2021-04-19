@@ -47,11 +47,13 @@
     return [NSString stringWithFormat:@"%@",[locale displayNameForKey:NSLocaleCurrencySymbol value:self]];
 }
 
-- (NSNumber *)localizedNumber {
+- (NSNumber *)localizedNumberForLocale:(NSString *)locale {
+
     NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
-    numberFormatter.locale = [NSLocale currentLocale];
     numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
-    numberFormatter.usesGroupingSeparator = NO;
+    numberFormatter.usesGroupingSeparator = YES;
+    numberFormatter.currencyGroupingSeparator = @",";
+    numberFormatter.currencyDecimalSeparator = @".";
 
     return [numberFormatter numberFromString:self];
 }
