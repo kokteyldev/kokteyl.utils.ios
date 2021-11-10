@@ -10,7 +10,6 @@
 		2F383F5723950702008CBD72 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F383F5523950702008CBD72 /* TableViewCell.m */; };
 		2F383F5823950702008CBD72 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F383F5623950702008CBD72 /* TableViewCell.xib */; };
 		2F383F5E23950F17008CBD72 /* KKUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA811F0237D7A53001E3601 /* KKUtils.framework */; };
-		2F383F5F23950F17008CBD72 /* KKUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA811F0237D7A53001E3601 /* KKUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2F9561AE256E43F5009FD28B /* CircularBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9561A9256E43F5009FD28B /* CircularBarViewController.m */; };
 		2F9561AF256E43F5009FD28B /* EmptyCellRendererViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9561AC256E43F5009FD28B /* EmptyCellRendererViewController.m */; };
 		2F9561B6256E47D1009FD28B /* EmptyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9561B4256E47D1009FD28B /* EmptyTableViewCell.m */; };
@@ -62,20 +61,6 @@
 			remoteInfo = KKUtilsTests;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		2F383F6023950F18008CBD72 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				2F383F5F23950F17008CBD72 /* KKUtils.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2F383F5423950702008CBD72 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
@@ -317,7 +302,6 @@
 				2FA811CA237D79BA001E3601 /* Sources */,
 				2FA811CB237D79BA001E3601 /* Frameworks */,
 				2FA811CC237D79BA001E3601 /* Resources */,
-				2F383F6023950F18008CBD72 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -513,6 +497,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -565,6 +550,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
